@@ -1,0 +1,290 @@
+[
+  {
+    "trans_name": "t1",
+    "h_state": "s0",
+    "t_state": "s1",
+    "input_event": "",
+    "guard": "",
+    "action": "VarsRead := true; Vb := 5; Pr := 90; Sm := 30; Tm := 5; AC := 0;",
+    "output_event": ""
+  },
+  {
+    "trans_name": "t2",
+    "h_state": "s1",
+    "t_state": "s1",
+    "input_event": "?U.MainCheck1();",
+    "guard": "VarsRead = true && Vb >=0 && Vb <=10 ;",
+    "action": "VarsRead := false; Vb := Vb + 20;",
+    "output_event": ""
+  },
+  {
+    "trans_name": "t3",
+    "h_state": "s1",
+    "t_state": "s2",
+    "input_event": "?U.CheckVb1();",
+    "guard": "VarsRead = true && Vb >= 11 && Vb <=25;",
+    "action": "VarsRead := false; Vb := Vb - 10;",
+    "output_event": ""
+  },
+  {
+    "trans_name": "t4",
+    "h_state": "s1",
+    "t_state": "s2",
+    "input_event": "?U.CheckPr1();",
+    "guard": "VarsRead = false && Pr >= 50 && Pr <= 85;",
+    "action": "VarsRead := true;Pr := Pr -20;",
+    "output_event": "!U.Release(masks);!U.SetLight(Seatbelt, on);"
+  },
+  {
+    "trans_name": "t5",
+    "h_state": "s1",
+    "t_state": "s2",
+    "input_event": "?U.CheckSm1();",
+    "guard": "VarsRead = false && Sm >= 11 && Sm <= 25;",
+    "action": "VarsRead := false; Sm := Sm - 15;",
+    "output_event": ""
+  },
+  {
+    "trans_name": "t6",
+    "h_state": "s1",
+    "t_state": "s2",
+    "input_event": "?U.CheckTm1();",
+    "guard": "VarsRead = true && Tm >= 3 && Tm <= 10;",
+    "action": "VarsRead := false;Tm := 15;",
+    "output_event": ""
+  },
+  {
+    "trans_name": "t7",
+    "h_state": "s2",
+    "t_state": "s1",
+    "input_event": "",
+    "guard": "Pr >= 86 && Pr <= 100 && Sm >= 0 && Sm <= 10;",
+    "action": "Pr := Pr + 10;",
+    "output_event": "!U.SetWarningLights(all, off);"
+  },
+  {
+    "trans_name": "t8",
+    "h_state": "s2",
+    "t_state": "s2",
+    "input_event": "",
+    "guard": "Vb >= 11 && Vb <= 13;",
+    "action": "Tm = Ptm;",
+    "output_event": ""
+  },
+  {
+    "trans_name": "t9",
+    "h_state": "s2",
+    "t_state": "s2",
+    "input_event": "",
+    "guard": "Vb >= 14 && Vb <= 20;",
+    "action": "Sm := Sm - 5;",
+    "output_event": "!U.SetLight(Seatbelt, on);"
+  },
+  {
+    "trans_name": "t10",
+    "h_state": "s2",
+    "t_state": "s2",
+    "input_event": "",
+    "guard": "Vb >= 21;",
+    "action": "",
+    "output_event": ""
+  },
+  {
+    "trans_name": "t11",
+    "h_state": "s2",
+    "t_state": "s2",
+    "input_event": "",
+    "guard": "Vb >= 0 && Vb <= 5;",
+    "action": "Vb := Vb + 10;Sm := Sm + 5;",
+    "output_event": "!U.SetSound(Sm, off);"
+  },
+  {
+    "trans_name": "t12",
+    "h_state": "s2",
+    "t_state": "s2",
+    "input_event": "",
+    "guard": "",
+    "action": "Vb := 20;",
+    "output_event": "!U.SetLight(Tm, on);"
+  },
+  {
+    "trans_name": "t13",
+    "h_state": "s2",
+    "t_state": "s3",
+    "input_event": "?U.CheckVb2();",
+    "guard": "VarsRead = true && Vb >25;",
+    "action": "VarsRead := false;Vb := Vb - 10;",
+    "output_event": ""
+  },
+  {
+    "trans_name": "t14",
+    "h_state": "s2",
+    "t_state": "s3",
+    "input_event": "?U.CheckPr2();",
+    "guard": "VarsRead = true && Pr>=0 && Pr<=49;",
+    "action": "VarsRead := false;",
+    "output_event": ""
+  },
+  {
+    "trans_name": "t15",
+    "h_state": "s2",
+    "t_state": "s3",
+    "input_event": "?U.CheckSm2();",
+    "guard": "VarsRead = false && Sm > 25;",
+    "action": "VarsRead := false;",
+    "output_event": ""
+  },
+  {
+    "trans_name": "t16",
+    "h_state": "s2",
+    "t_state": "s3",
+    "input_event": "?U.CheckTm2();",
+    "guard": "VarsRead = true && Tm >46 || Tm <= 2;",
+    "action": "VarsRead := true;",
+    "output_event": ""
+  },
+  {
+    "trans_name": "t17",
+    "h_state": "s3",
+    "t_state": "s2",
+    "input_event": "?U.MainCheck2();",
+    "guard": "VarsRead = true && Vb >= 11 && Vb <= 25 && Pr >= 50 && Pr <= 85 && Sm >= 11 && Sm <= 25;",
+    "action": "VarsRead := false ; Vb := Vb + 4 ;",
+    "output_event": "!U.SetWarningLights(all, on);"
+  },
+  {
+    "trans_name": "t18",
+    "h_state": "s3",
+    "t_state": "s2",
+    "input_event": "?U.MainCheck2();",
+    "guard": "VarsRead = true && Vb >= 11 && Vb <= 25 && Pr >= 86 && Pr <= 100 && Sm >=0 && Sm<=10 && Tm>=11 &&Tm<=35;",
+    "action": "VarsRead := false;Vb := Vb - 5;",
+    "output_event": "!U.SetLight(Seatbelt, on);"
+  },
+  {
+    "trans_name": "t19",
+    "h_state": "s3",
+    "t_state": "s2",
+    "input_event": "?U.MainCheck2();",
+    "guard": "VarsRead = true && Vb >= 0 && Vb <= 10 && Pr >= 50 && Pr <= 85 && Sm >=0 && Sm<=10 && Tm>=11 && Tm<=35;",
+    "action": "VarsRead := false;Vb := Vb + 25;",
+    "output_event": "!U.Release(masks); !U.SetLight(Seatbelt, on); !U.SetSound(Pr, off);"
+  },
+  {
+    "trans_name": "t20",
+    "h_state": "s3",
+    "t_state": "s2",
+    "input_event": "?U.MainCheck2();",
+    "guard": "VarsRead = false && Vb >= 0 && Vb <= 10 && Pr >= 86 && Pr <= 100 && Sm >=11 && Sm<=25 && Tm>=11 && Tm<=35;",
+    "action": "VarsRead := true;Vb := Vb + 10;",
+    "output_event": "!U.SetSound(Sm, off);"
+  },
+  {
+    "trans_name": "t21",
+    "h_state": "s3",
+    "t_state": "s2",
+    "input_event": "?U.MainCheck2();",
+    "guard": "VarsRead = true && Vb >= 0 && Vb <= 10 && Pr >= 86 && Pr <= 100 && Sm >=0 && Sm<=10;",
+    "action": "VarsRead := false;Vb := Vb + 10;",
+    "output_event": "!U.SetLight(Tm, on);!U.SelLight(AC, on);"
+  },
+  {
+    "trans_name": "t22",
+    "h_state": "s3",
+    "t_state": "s3",
+    "input_event": "",
+    "guard": "Vb >= 0 && Vb <= 5;",
+    "action": "VarsRead := true;Vb := Vb + 10;",
+    "output_event": ""
+  },
+  {
+    "trans_name": "t23",
+    "h_state": "s3",
+    "t_state": "s3",
+    "input_event": "",
+    "guard": "Vb >= 6 && Vb <= 10;",
+    "action": "Vb := Vb -3;",
+    "output_event": "!U.SetLight(Seatbelt, on);"
+  },
+  {
+    "trans_name": "t24",
+    "h_state": "s3",
+    "t_state": "s3",
+    "input_event": "",
+    "guard": "Vb >= 11 && Vb <= 13;",
+    "action": "",
+    "output_event": "!U.Release(masks);"
+  },
+  {
+    "trans_name": "t25",
+    "h_state": "s3",
+    "t_state": "s3",
+    "input_event": "",
+    "guard": "Vb >= 14 && Vb <= 20;",
+    "action": "Vb := Vb - 10;",
+    "output_event": "!U.SetSound(Sm, off);"
+  },
+  {
+    "trans_name": "t26",
+    "h_state": "s3",
+    "t_state": "s3",
+    "input_event": "",
+    "guard": "Vb > 20;",
+    "action": "",
+    "output_event": "!U.SetLight(Tm, on);"
+  },
+  {
+    "trans_name": "t27",
+    "h_state": "s1",
+    "t_state": "s3",
+    "input_event": "",
+    "guard": "Vb >= 0 && Vb <= 5;",
+    "action": "",
+    "output_event": "!U.SetLight(Seatbelt, on);"
+  },
+  {
+    "trans_name": "t28",
+    "h_state": "s1",
+    "t_state": "s3",
+    "input_event": "",
+    "guard": "Vb >= 6 && Vb <= 10;",
+    "action": "",
+    "output_event": "!U.SetLight(Seatbelt, on); !U.SetSound(Pr, off);"
+  },
+  {
+    "trans_name": "t29",
+    "h_state": "s1",
+    "t_state": "s3",
+    "input_event": "",
+    "guard": "Vb >= 11 && Vb <= 13;",
+    "action": "",
+    "output_event": ""
+  },
+  {
+    "trans_name": "t30",
+    "h_state": "s1",
+    "t_state": "s3",
+    "input_event": "",
+    "guard": "Vb >= 14 && Vb <= 20;",
+    "action": "",
+    "output_event": "!U.SetLight(AC, on);"
+  },
+  {
+    "trans_name": "t31",
+    "h_state": "s3",
+    "t_state": "s1",
+    "input_event": "",
+    "guard": "Tm >= 11 && Tm <= 35;",
+    "action": "",
+    "output_event": ""
+  },
+  {
+    "trans_name": "t32",
+    "h_state": "s0",
+    "t_state": "s1",
+    "input_event": "",
+    "guard": "",
+    "action": "VarsRead := false; Vb := 10; Pr := 90; Sm := 30; Tm := 5 ; AC := 0;",
+    "output_event": "!U.SetWarningLights(all, off);"
+  }
+]

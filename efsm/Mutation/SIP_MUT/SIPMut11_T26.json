@@ -1,0 +1,515 @@
+[
+  {
+    "trans_name": "t1",
+    "h_state": "id5",
+    "t_state": "id6",
+    "input_event": "?U.input(qos);",
+    "guard": "",
+    "action": "firstId := 0; CallId := 0; lastId := 1;",
+    "output_event": ""
+  },
+  {
+    "trans_name": "t2",
+    "h_state": "id5",
+    "t_state": "id6",
+    "input_event": "",
+    "guard": "CallId <> firstId;",
+    "action": "qos := qos - 1;",
+    "output_event": ""
+  },
+  {
+    "trans_name": "t3",
+    "h_state": "id0",
+    "t_state": "id1",
+    "input_event": "",
+    "guard": "",
+    "action": "qos := qos - 1;",
+    "output_event": "!U.output(qos);"
+  },
+  {
+    "trans_name": "t4",
+    "h_state": "id0",
+    "t_state": "id1",
+    "input_event": "",
+    "guard": "CallId <> firstId;",
+    "action": "firstId := 0;",
+    "output_event": "!U.output(firstId);"
+  },
+  {
+    "trans_name": "t5",
+    "h_state": "id0",
+    "t_state": "id1",
+    "input_event": "?U.input(qos);",
+    "guard": "CallId = firstId;",
+    "action": "",
+    "output_event": ""
+  },
+  {
+    "trans_name": "t6",
+    "h_state": "id1",
+    "t_state": "id0",
+    "input_event": "?U.input(qos);",
+    "guard": "CallId <> firstId;",
+    "action": "",
+    "output_event": "!U.output(lastId);"
+  },
+  {
+    "trans_name": "t7",
+    "h_state": "id26",
+    "t_state": "id1",
+    "input_event": "?U.input(qos);",
+    "guard": "",
+    "action": "",
+    "output_event": "!U.output(firstId);"
+  },
+  {
+    "trans_name": "t8",
+    "h_state": "id26",
+    "t_state": "id1",
+    "input_event": "",
+    "guard": "CallId = firstId;",
+    "action": "firstId := 0;",
+    "output_event": "!U.output(CallId);"
+  },
+  {
+    "trans_name": "t9",
+    "h_state": "id2",
+    "t_state": "id5",
+    "input_event": "",
+    "guard": "",
+    "action": "firstId := 0;",
+    "output_event": "!U.output(qos);"
+  },
+  {
+    "trans_name": "t10",
+    "h_state": "id7",
+    "t_state": "id2",
+    "input_event": "?U.input(qos);",
+    "guard": "CallId = firstId;",
+    "action": "",
+    "output_event": "!U.output(qos);"
+  },
+  {
+    "trans_name": "t11",
+    "h_state": "id7",
+    "t_state": "id6",
+    "input_event": "",
+    "guard": "CallId = firstId;",
+    "action": "lastId := CallId;",
+    "output_event": "!U.output(lastId);"
+  },
+  {
+    "trans_name": "t12",
+    "h_state": "id7",
+    "t_state": "id6",
+    "input_event": "?U.input(qos);",
+    "guard": "CallId = firstId;",
+    "action": "qos := qos - 1;",
+    "output_event": "!U.output(firstId);"
+  },
+  {
+    "trans_name": "t13",
+    "h_state": "id3",
+    "t_state": "id5",
+    "input_event": "",
+    "guard": "CallId <> firstId;",
+    "action": "",
+    "output_event": ""
+  },
+  {
+    "trans_name": "t14",
+    "h_state": "id9",
+    "t_state": "id3",
+    "input_event": "?U.input(qos);",
+    "guard": "CallId <> firstId;",
+    "action": "firstId := qos;",
+    "output_event": "!U.output(CallId);"
+  },
+  {
+    "trans_name": "t15",
+    "h_state": "id9",
+    "t_state": "id6",
+    "input_event": "?U.input(qos);",
+    "guard": "",
+    "action": "",
+    "output_event": ""
+  },
+  {
+    "trans_name": "t16",
+    "h_state": "id9",
+    "t_state": "id6",
+    "input_event": "",
+    "guard": "CallId <> firstId;",
+    "action": "CallId := 1;",
+    "output_event": ""
+  },
+  {
+    "trans_name": "t17",
+    "h_state": "id7",
+    "t_state": "id10",
+    "input_event": "",
+    "guard": "CallId = firstId;",
+    "action": "firstId := 0;",
+    "output_event": "!U.output(CallId);"
+  },
+  {
+    "trans_name": "t18",
+    "h_state": "id9",
+    "t_state": "id10",
+    "input_event": "",
+    "guard": "CallId = firstId;",
+    "action": "",
+    "output_event": "!U.output(lastId);"
+  },
+  {
+    "trans_name": "t19",
+    "h_state": "id9",
+    "t_state": "id8",
+    "input_event": "?U.input(qos);",
+    "guard": "CallId <> firstId;",
+    "action": "firstId := 0; lastId := CallId;",
+    "output_event": ""
+  },
+  {
+    "trans_name": "t20",
+    "h_state": "id7",
+    "t_state": "id8",
+    "input_event": "",
+    "guard": "CallId <> firstId;",
+    "action": "qos := qos - 1; lastId := CallId;",
+    "output_event": "!U.output(qos);"
+  },
+  {
+    "trans_name": "t21",
+    "h_state": "id5",
+    "t_state": "id10",
+    "input_event": "",
+    "guard": "",
+    "action": "qos := qos - 1; lastId := CallId;",
+    "output_event": "!U.output(lastId);"
+  },
+  {
+    "trans_name": "t22",
+    "h_state": "id5",
+    "t_state": "id8",
+    "input_event": "",
+    "guard": "CallId <> firstId;",
+    "action": "lastId := CallId;",
+    "output_event": "!U.output(CallId);"
+  },
+  {
+    "trans_name": "t23",
+    "h_state": "id4",
+    "t_state": "id5",
+    "input_event": "?U.input(qos);",
+    "guard": "CallId <> firstId;",
+    "action": "",
+    "output_event": "!U.output(firstId);"
+  },
+  {
+    "trans_name": "t24",
+    "h_state": "id22",
+    "t_state": "id4",
+    "input_event": "?U.input(qos);",
+    "guard": "CallId = firstId;",
+    "action": "firstId := 0;",
+    "output_event": "!U.output(lastId);"
+  },
+  {
+    "trans_name": "t25",
+    "h_state": "id22",
+    "t_state": "id6",
+    "input_event": "",
+    "guard": "CallId = firstId;",
+    "action": "lastId := CallId;",
+    "output_event": "!U.output(qos);"
+  },
+  {
+    "trans_name": "t26",
+    "h_state": "id6",
+    "t_state": "id5",
+    "input_event": "",
+    "guard": "",
+    "action": "firstId := 0 ; CallId := 0 ; lastId := 0 ;",
+    "output_event": "!U.output(CallId);"
+  },
+  {
+    "trans_name": "t27",
+    "h_state": "id22",
+    "t_state": "id6",
+    "input_event": "?U.input(qos);",
+    "guard": "",
+    "action": "",
+    "output_event": "!U.output(firstId);"
+  },
+  {
+    "trans_name": "t28",
+    "h_state": "id8",
+    "t_state": "id7",
+    "input_event": "?U.input(qos);",
+    "guard": "",
+    "action": "CallId := 1;",
+    "output_event": "!U.output(firstId);"
+  },
+  {
+    "trans_name": "t29",
+    "h_state": "id22",
+    "t_state": "id8",
+    "input_event": "?U.input(qos);",
+    "guard": "CallId <> firstId;",
+    "action": "lastId := CallId;",
+    "output_event": "!U.output(firstId);"
+  },
+  {
+    "trans_name": "t30",
+    "h_state": "id4",
+    "t_state": "id14",
+    "input_event": "",
+    "guard": "CallId = firstId;",
+    "action": "",
+    "output_event": "!U.output(CallId);"
+  },
+  {
+    "trans_name": "t31",
+    "h_state": "id10",
+    "t_state": "id9",
+    "input_event": "",
+    "guard": "",
+    "action": "",
+    "output_event": "!U.output(qos);"
+  },
+  {
+    "trans_name": "t32",
+    "h_state": "id22",
+    "t_state": "id10",
+    "input_event": "?U.input(qos);",
+    "guard": "CallId = firstId;",
+    "action": "",
+    "output_event": "!U.output(lastId);"
+  },
+  {
+    "trans_name": "t33",
+    "h_state": "id17",
+    "t_state": "id21",
+    "input_event": "",
+    "guard": "CallId = firstId;",
+    "action": "firstId := 0; CallId := 0; lastId := 1;",
+    "output_event": "!U.output(CallId);"
+  },
+  {
+    "trans_name": "t34",
+    "h_state": "id17",
+    "t_state": "id14",
+    "input_event": "",
+    "guard": "CallId <> firstId;",
+    "action": "lastId := CallId;",
+    "output_event": "!U.output(firstId);"
+  },
+  {
+    "trans_name": "t35",
+    "h_state": "id17",
+    "t_state": "id23",
+    "input_event": "?U.input(qos);",
+    "guard": "CallId = firstId;",
+    "action": "CallId := 1;",
+    "output_event": "!U.output(CallId);"
+  },
+  {
+    "trans_name": "t36",
+    "h_state": "id17",
+    "t_state": "id18",
+    "input_event": "?U.input(qos);",
+    "guard": "CallId <> firstId;",
+    "action": "lastId := CallId;",
+    "output_event": "!U.output(qos);"
+  },
+  {
+    "trans_name": "t37",
+    "h_state": "id17",
+    "t_state": "id16",
+    "input_event": "",
+    "guard": "",
+    "action": "",
+    "output_event": "!U.output(qos);"
+  },
+  {
+    "trans_name": "t38",
+    "h_state": "id13",
+    "t_state": "id18",
+    "input_event": "?U.input(qos);",
+    "guard": "CallId <> firstId;",
+    "action": "qos := qos - 1; lastId := CallId;",
+    "output_event": "!U.output(lastId);"
+  },
+  {
+    "trans_name": "t39",
+    "h_state": "id11",
+    "t_state": "id17",
+    "input_event": "?U.input(qos);",
+    "guard": "CallId = firstId;",
+    "action": "",
+    "output_event": ""
+  },
+  {
+    "trans_name": "t40",
+    "h_state": "id13",
+    "t_state": "id11",
+    "input_event": "",
+    "guard": "",
+    "action": "firstId := 0; CallId := 0; lastId := 1;",
+    "output_event": "!U.output(lastId);"
+  },
+  {
+    "trans_name": "t41",
+    "h_state": "id13",
+    "t_state": "id16",
+    "input_event": "?U.input(qos);",
+    "guard": "",
+    "action": "lastId := CallId;",
+    "output_event": "!U.output(lastId);"
+  },
+  {
+    "trans_name": "t42",
+    "h_state": "id13",
+    "t_state": "id23",
+    "input_event": "?U.input(qos);",
+    "guard": "CallId = firstId;",
+    "action": "",
+    "output_event": "!U.output(CallId);"
+  },
+  {
+    "trans_name": "t43",
+    "h_state": "id13",
+    "t_state": "id21",
+    "input_event": "?U.input(qos);",
+    "guard": "CallId = firstId;",
+    "action": "",
+    "output_event": "!U.output(CallId);"
+  },
+  {
+    "trans_name": "t44",
+    "h_state": "id13",
+    "t_state": "id14",
+    "input_event": "?U.input(qos);",
+    "guard": "CallId <> firstId;",
+    "action": "CallId := 1; lastId := CallId;",
+    "output_event": "!U.output(lastId);"
+  },
+  {
+    "trans_name": "t45",
+    "h_state": "id20",
+    "t_state": "id23",
+    "input_event": "",
+    "guard": "CallId = firstId;",
+    "action": "lastId := CallId;",
+    "output_event": "!U.output(qos);"
+  },
+  {
+    "trans_name": "t46",
+    "h_state": "id20",
+    "t_state": "id14",
+    "input_event": "",
+    "guard": "CallId <> firstId;",
+    "action": "firstId := 0; CallId := 0; lastId := CallId;",
+    "output_event": ""
+  },
+  {
+    "trans_name": "t47",
+    "h_state": "id20",
+    "t_state": "id18",
+    "input_event": "?U.input(qos);",
+    "guard": "CallId <> firstId;",
+    "action": "firstId := 1; CallId := 1; lastId := 1;",
+    "output_event": "!U.output(CallId);"
+  },
+  {
+    "trans_name": "t48",
+    "h_state": "id12",
+    "t_state": "id17",
+    "input_event": "?U.input(qos);",
+    "guard": "CallId = firstId;",
+    "action": "",
+    "output_event": "!U.output(qos);"
+  },
+  {
+    "trans_name": "t49",
+    "h_state": "id20",
+    "t_state": "id12",
+    "input_event": "?U.input(qos);",
+    "guard": "CallId = firstId;",
+    "action": "",
+    "output_event": ""
+  },
+  {
+    "trans_name": "t50",
+    "h_state": "id14",
+    "t_state": "id13",
+    "input_event": "?U.input(qos);",
+    "guard": "CallId = firstId;",
+    "action": "CallId := 1;",
+    "output_event": "!U.output(firstId);"
+  },
+  {
+    "trans_name": "t51",
+    "h_state": "id13",
+    "t_state": "id18",
+    "input_event": "",
+    "guard": "CallId <> firstId;",
+    "action": "firstId := 0;",
+    "output_event": ""
+  },
+  {
+    "trans_name": "t52",
+    "h_state": "id24",
+    "t_state": "id14",
+    "input_event": "?U.input(qos);",
+    "guard": "CallId <> firstId;",
+    "action": "CallId := 1; lastId := CallId;",
+    "output_event": "!U.output(firstId);"
+  },
+  {
+    "trans_name": "t53",
+    "h_state": "id20",
+    "t_state": "id16",
+    "input_event": "?U.input(qos);",
+    "guard": "CallId <> firstId;",
+    "action": "firstId := 0; CallId := 0; lastId := 1;",
+    "output_event": ""
+  },
+  {
+    "trans_name": "t54",
+    "h_state": "id15",
+    "t_state": "id17",
+    "input_event": "",
+    "guard": "CallId = firstId;",
+    "action": "",
+    "output_event": "!U.output(firstId);"
+  },
+  {
+    "trans_name": "t55",
+    "h_state": "id24",
+    "t_state": "id15",
+    "input_event": "",
+    "guard": "CallId = firstId;",
+    "action": "CallId := 1;",
+    "output_event": ""
+  },
+  {
+    "trans_name": "t56",
+    "h_state": "id24",
+    "t_state": "id16",
+    "input_event": "",
+    "guard": "CallId = firstId;",
+    "action": "",
+    "output_event": "!U.output(firstId);"
+  },
+  {
+    "trans_name": "t57",
+    "h_state": "id16",
+    "t_state": "id17",
+    "input_event": "?U.input(qos);",
+    "guard": "CallId <> firstId;",
+    "action": "",
+    "output_event": "!U.output(lastId);"
+  }
+]

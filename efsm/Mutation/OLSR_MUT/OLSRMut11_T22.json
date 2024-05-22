@@ -1,0 +1,209 @@
+[
+  {
+    "trans_name": "t1",
+    "h_state": "",
+    "t_state": "I",
+    "input_event": "",
+    "guard": "",
+    "action": "SentHello := false;HelloTimer := 0;UpdateTimer := 0;TcTimer := 0;ASYM := 0;obs := 0; cur := 0;SYM := 0;MPR := 0;MPRSEL := 0;",
+    "output_event": ""
+  },
+  {
+    "trans_name": "t2",
+    "h_state": "I",
+    "t_state": "I",
+    "input_event": "",
+    "guard": "",
+    "action": "SentHello := true;HelloTimer := 1;",
+    "output_event": "!cur.Hello();"
+  },
+  {
+    "trans_name": "t3",
+    "h_state": "I",
+    "t_state": "I",
+    "input_event": "",
+    "guard": "",
+    "action": "UpdateTimer := 1;SentHello := false;SYM := SYM+1;",
+    "output_event": ""
+  },
+  {
+    "trans_name": "t4",
+    "h_state": "I",
+    "t_state": "A",
+    "input_event": "?obs.Hello();",
+    "guard": "",
+    "action": "UpdateTimer := 1;",
+    "output_event": ""
+  },
+  {
+    "trans_name": "t5",
+    "h_state": "A",
+    "t_state": "I",
+    "input_event": "",
+    "guard": "",
+    "action": "UpdateTimer := 1;MPRSEL := MPRSEL + 1;",
+    "output_event": ""
+  },
+  {
+    "trans_name": "t6",
+    "h_state": "A",
+    "t_state": "A",
+    "input_event": "",
+    "guard": "",
+    "action": "obs := ASYM;HelloTimer := 2;",
+    "output_event": "!cur.Hello(obs);"
+  },
+  {
+    "trans_name": "t7",
+    "h_state": "A",
+    "t_state": "A",
+    "input_event": "?obs.Hello();",
+    "guard": "",
+    "action": "UpdateTimer := 0;MPR := 1;",
+    "output_event": ""
+  },
+  {
+    "trans_name": "t8",
+    "h_state": "A",
+    "t_state": "S",
+    "input_event": "?obs.Hello(cur);",
+    "guard": "(cur = ASYM && SentHello = true)||(cur = SYM );",
+    "action": "UpdateTimer := 0;",
+    "output_event": ""
+  },
+  {
+    "trans_name": "t9",
+    "h_state": "S",
+    "t_state": "A",
+    "input_event": "?obs.Hello();",
+    "guard": "",
+    "action": "UpdateTimer := 1;SetHello := 0;",
+    "output_event": ""
+  },
+  {
+    "trans_name": "t10",
+    "h_state": "S",
+    "t_state": "I",
+    "input_event": "",
+    "guard": "",
+    "action": "UpdateTimer := 0;SetHello := false;",
+    "output_event": ""
+  },
+  {
+    "trans_name": "t11",
+    "h_state": "S",
+    "t_state": "S",
+    "input_event": "",
+    "guard": "",
+    "action": "obs := SYM-1;HelloTimer := 1;",
+    "output_event": "!cur.Hello(obs);"
+  },
+  {
+    "trans_name": "t12",
+    "h_state": "S",
+    "t_state": "S",
+    "input_event": "",
+    "guard": "",
+    "action": "obs := MPR;HelloTimer := 1;ASYM := ASYM + UpdateTimer;",
+    "output_event": "!cur.Hello(obs);"
+  },
+  {
+    "trans_name": "t13",
+    "h_state": "S",
+    "t_state": "S",
+    "input_event": "",
+    "guard": "",
+    "action": "",
+    "output_event": "!cur.Date();"
+  },
+  {
+    "trans_name": "t14",
+    "h_state": "S",
+    "t_state": "S",
+    "input_event": "?obs.TC(cur);",
+    "guard": "cur = MPRSEL;",
+    "action": "MPRSEL := 1;",
+    "output_event": ""
+  },
+  {
+    "trans_name": "t15",
+    "h_state": "S",
+    "t_state": "S",
+    "input_event": "?obs.Hello(cur);",
+    "guard": "cur = SYM || cur = ASYM;",
+    "action": "UpdateTimer := 0;MPRSEL := SYM + 1;",
+    "output_event": ""
+  },
+  {
+    "trans_name": "t16",
+    "h_state": "S",
+    "t_state": "M",
+    "input_event": "?obs.Hello(cur);",
+    "guard": "cur = MPR;",
+    "action": "UpdateTimer := 1;TcTimer := 0;",
+    "output_event": ""
+  },
+  {
+    "trans_name": "t17",
+    "h_state": "M",
+    "t_state": "S",
+    "input_event": "?obs.Hello(cur);",
+    "guard": "cur = SYM || cur = ASYM;",
+    "action": "UpdateTimer := 0;ASYM := 0;",
+    "output_event": ""
+  },
+  {
+    "trans_name": "t18",
+    "h_state": "M",
+    "t_state": "M",
+    "input_event": "",
+    "guard": "",
+    "action": "obs := MPRSEL+1;HelloTimer := 0;",
+    "output_event": "!cur.Hello(obs);"
+  },
+  {
+    "trans_name": "t19",
+    "h_state": "M",
+    "t_state": "M",
+    "input_event": "",
+    "guard": "",
+    "action": "TcTimer := 0;MPR := 0;",
+    "output_event": "!cur.TC(obs);"
+  },
+  {
+    "trans_name": "t20",
+    "h_state": "M",
+    "t_state": "M",
+    "input_event": "?obs.Data();",
+    "guard": "",
+    "action": "",
+    "output_event": "!cur.Data();"
+  },
+  {
+    "trans_name": "t21",
+    "h_state": "M",
+    "t_state": "M",
+    "input_event": "?obs.Hello(cur);",
+    "guard": "cur = MPR;",
+    "action": "UpdateTimer := 1;ASYM := ASYM + UpdateTimer;",
+    "output_event": ""
+  },
+  {
+    "trans_name": "t22",
+    "h_state": "M",
+    "t_state": "A",
+    "input_event": "?obs.Hello();",
+    "guard": "",
+    "action": "UpdateTimer := 0 ; MprSelList := 5 ;",
+    "output_event": ""
+  },
+  {
+    "trans_name": "t23",
+    "h_state": "M",
+    "t_state": "I",
+    "input_event": "",
+    "guard": "",
+    "action": "UpdateTimer := 1;MprSelList := 0;AsymList := 0;SentHello := 0;MPR := UpdateTimer;",
+    "output_event": ""
+  }
+]

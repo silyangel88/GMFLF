@@ -1,0 +1,191 @@
+[
+  {
+    "trans_name": "t0",
+    "h_state": "s1",
+    "t_state": "s2",
+    "input_event": "?U.TCONreq();",
+    "guard": "",
+    "action": "opt := 0 ; R_credit := 0 ; ",
+    "output_event": "!N.TrCR();"
+  },
+  {
+    "trans_name": "t1",
+    "h_state": "s1",
+    "t_state": "s3",
+    "input_event": "?N.TrCR(opt_ind,cr);",
+    "guard": "",
+    "action": "opt := opt_ind; S_credit := cr; R_credit := 0;",
+    "output_event": "!U.TCONind();"
+  },
+  {
+    "trans_name": "t2",
+    "h_state": "s2",
+    "t_state": "s4",
+    "input_event": "?N.TrCC(opt_ind,cr);",
+    "guard": "opt_ind < opt;",
+    "action": "TRsq := 0 ;TSsq := 0; opt := opt_ind; S_credit := cr;",
+    "output_event": "!U.TCONconf();"
+  },
+  {
+    "trans_name": "t3",
+    "h_state": "s2",
+    "t_state": "s5",
+    "input_event": "?N.TrCC(opt_ind,cr);",
+    "guard": "opt_ind > opt;",
+    "action": "",
+    "output_event": "!U.TDISind();!N.TrDR();"
+  },
+  {
+    "trans_name": "t4",
+    "h_state": "s1",
+    "t_state": "s2",
+    "input_event": "?N.TrDR();",
+    "guard": "",
+    "action": "",
+    "output_event": "!U.TDISind();!N.terminated();"
+  },
+  {
+    "trans_name": "t5",
+    "h_state": "s3",
+    "t_state": "s4",
+    "input_event": "?U.TCONresp(accpt_opt);",
+    "guard": "accpt_opt < opt;",
+    "action": "opt := accpt_opt;TRsq := 0;TSsq := 0; ",
+    "output_event": "!N.TrCC();"
+  },
+  {
+    "trans_name": "t6",
+    "h_state": "s3",
+    "t_state": "s6",
+    "input_event": "?U.TDISreq();",
+    "guard": "",
+    "action": "",
+    "output_event": "!N.TrDR();"
+  },
+  {
+    "trans_name": "t7",
+    "h_state": "s4",
+    "t_state": "s4",
+    "input_event": "?U.TDATAreq();",
+    "guard": "S_credit > 0;",
+    "action": "S_credit := S_credit - 1;TSsq := (TSsq + 1) % 128;",
+    "output_event": "!N.TrDT();"
+  },
+  {
+    "trans_name": "t8",
+    "h_state": "s4",
+    "t_state": "s4",
+    "input_event": "?N.TrDT(Send_sq);",
+    "guard": "R_credit <> 0 && Send_sq = TRsq;",
+    "action": "TSsq := (TSsq + 1) % 128; R_credit := R_credit - 1;",
+    "output_event": "!U.DATAind();!N.TrAK();"
+  },
+  {
+    "trans_name": "t9",
+    "h_state": "s4",
+    "t_state": "s4",
+    "input_event": "?N.TrDT(Send_sq);",
+    "guard": "R_credit = 0 || Send_sq <> TRsq;",
+    "action": "",
+    "output_event": "!U.error();!N.error();"
+  },
+  {
+    "trans_name": "t10",
+    "h_state": "s4",
+    "t_state": "s4",
+    "input_event": "?U.READY(cr);",
+    "guard": "",
+    "action": "R_credit := R_credit + cr;",
+    "output_event": "!N.TrAK();"
+  },
+  {
+    "trans_name": "t11",
+    "h_state": "s4",
+    "t_state": "s4",
+    "input_event": "?N.TrAK(XpSsq,cr);",
+    "guard": "TSsq > XpSsq && cr + XpSsq - TSsq >= 0 && cr + XpSsq -TSsq <= 15;",
+    "action": "S_credit := cr + XpSsq - TSsq;",
+    "output_event": ""
+  },
+  {
+    "trans_name": "t12",
+    "h_state": "s4",
+    "t_state": "s4",
+    "input_event": "?N.TrAK(XpSsq,cr);",
+    "guard": "TSsq >= XpSsq && ( ( cr + XpSsq - TSsq < 0 ) || ( cr + XpSsq + TSsq > 0 )) ;",
+    "action": "",
+    "output_event": "!U.error();!N.error();"
+  },
+  {
+    "trans_name": "t13",
+    "h_state": "s4",
+    "t_state": "s4",
+    "input_event": "?N.TrAK(XpSsq,cr);",
+    "guard": "TSsq < XpSsq && (cr + XpSsq - TSsq -128 >= 0) && (cr + XpSsq - TSsq-128 <= 15);",
+    "action": "S_credit := cr + XpSsq  - TSsq -128;",
+    "output_event": ""
+  },
+  {
+    "trans_name": "t14",
+    "h_state": "s4",
+    "t_state": "s4",
+    "input_event": "?N.TrAK(XpSsq,cr);",
+    "guard": "TSsq < XpSsq && ((cr + XpSsq - TSsq -128 < 0) || (cr + XpSsq - TSsq-128 > 15));",
+    "action": "",
+    "output_event": "!U.error();!N.error();"
+  },
+  {
+    "trans_name": "t15",
+    "h_state": "s4",
+    "t_state": "s4",
+    "input_event": "?N.Ready();",
+    "guard": "S_credit > 0;",
+    "action": "",
+    "output_event": "!U.Ready();"
+  },
+  {
+    "trans_name": "t16",
+    "h_state": "s4",
+    "t_state": "s5",
+    "input_event": "?U.TDISreq();",
+    "guard": "",
+    "action": "",
+    "output_event": "!N.TrDR();"
+  },
+  {
+    "trans_name": "t17",
+    "h_state": "s4",
+    "t_state": "s6",
+    "input_event": "?N.TrDR();",
+    "guard": "",
+    "action": "",
+    "output_event": "!U.TDISind();!N.TrDC();"
+  },
+  {
+    "trans_name": "t18",
+    "h_state": "s6",
+    "t_state": "s1",
+    "input_event": "?N.terminated();",
+    "guard": "",
+    "action": "",
+    "output_event": "!U.TDISconf();"
+  },
+  {
+    "trans_name": "t19",
+    "h_state": "s5",
+    "t_state": "s1",
+    "input_event": "?N.TrDC();",
+    "guard": "",
+    "action": "",
+    "output_event": "!N.terminated();!U.TDISconf();"
+  },
+  {
+    "trans_name": "t20",
+    "h_state": "s5",
+    "t_state": "s1",
+    "input_event": "?N.TrDR();",
+    "guard": "",
+    "action": "",
+    "output_event": "!N.terminated();"
+  }
+]

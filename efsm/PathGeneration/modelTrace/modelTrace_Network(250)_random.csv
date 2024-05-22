@@ -1,0 +1,1897 @@
+index,trace,input_val,output_event,input_event
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+4,"['t1', 't2', 't3', 't5', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+5,"['t1', 't2', 't3', 't5', 't5', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+6,"['t1', 't2', 't3', 't5', 't5', 't5', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+7,"['t1', 't2', 't3', 't5', 't5', 't5', 't5', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+8,"['t1', 't2', 't3', 't5', 't5', 't5', 't5', 't4', 't9']","{'no_of_segment': 0, 'blockbound': 0}",,?L.BLOCK();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+4,"['t1', 't2', 't3', 't4', 't9']","{'no_of_segment': 0, 'blockbound': 0}",,?L.BLOCK();
+5,"['t1', 't2', 't3', 't4', 't9', 't11']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease() ; !U.MONITOR_INCOMPLETE(1) ; !U.DISrequest() ;,
+6,"['t1', 't2', 't3', 't4', 't9', 't11', 't14']","{'no_of_segment': 0, 'blockbound': 0}",,?L.BLOCK();
+7,"['t1', 't2', 't3', 't4', 't9', 't11', 't14', 't16']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+8,"['t1', 't2', 't3', 't4', 't9', 't11', 't14', 't16', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+4,"['t1', 't17', 't1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+5,"['t1', 't17', 't1', 't2', 't3', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+6,"['t1', 't17', 't1', 't2', 't3', 't4', 't6']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease();,
+7,"['t1', 't17', 't1', 't2', 't3', 't4', 't6', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(2); !L.Start_timer() ; ,?L.TOKENgive();
+8,"['t1', 't17', 't1', 't2', 't3', 't4', 't6', 't4', 't9']","{'no_of_segment': 0, 'blockbound': 0}",,?L.BLOCK();
+9,"['t1', 't17', 't1', 't2', 't3', 't4', 't6', 't4', 't9', 't11']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease() ; !U.MONITOR_INCOMPLETE(2) ; !U.DISrequest() ;,
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+4,"['t1', 't17', 't1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+4,"['t1', 't2', 't3', 't5', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+5,"['t1', 't2', 't3', 't5', 't4', 't6']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease();,
+6,"['t1', 't2', 't3', 't5', 't4', 't6', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(2); !L.Start_timer() ; ,?L.TOKENgive();
+7,"['t1', 't2', 't3', 't5', 't4', 't6', 't4', 't9']","{'no_of_segment': 0, 'blockbound': 0}",,?L.BLOCK();
+8,"['t1', 't2', 't3', 't5', 't4', 't6', 't4', 't9', 't11']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease() ; !U.MONITOR_INCOMPLETE(2) ; !U.DISrequest() ;,
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+4,"['t1', 't2', 't3', 't4', 't6']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease();,
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+4,"['t1', 't17', 't1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+5,"['t1', 't17', 't1', 't2', 't3', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+6,"['t1', 't17', 't1', 't2', 't3', 't4', 't9']","{'no_of_segment': 0, 'blockbound': 0}",,?L.BLOCK();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+4,"['t1', 't17', 't1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+5,"['t1', 't17', 't1', 't2', 't3', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+6,"['t1', 't17', 't1', 't2', 't3', 't4', 't6']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease();,
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+4,"['t1', 't17', 't1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+4,"['t1', 't2', 't3', 't4', 't6']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease();,
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+4,"['t1', 't17', 't1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+5,"['t1', 't17', 't1', 't17', 't1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+4,"['t1', 't17', 't1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+5,"['t1', 't17', 't1', 't17', 't1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+6,"['t1', 't17', 't1', 't17', 't1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+4,"['t1', 't2', 't3', 't4', 't9']","{'no_of_segment': 0, 'blockbound': 0}",,?L.BLOCK();
+5,"['t1', 't2', 't3', 't4', 't9', 't11']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease() ; !U.MONITOR_INCOMPLETE(1) ; !U.DISrequest() ;,
+6,"['t1', 't2', 't3', 't4', 't9', 't11', 't15']","{'no_of_segment': 0, 'blockbound': 0}",,?L.ACK();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+4,"['t1', 't17', 't1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+5,"['t1', 't17', 't1', 't2', 't3', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+6,"['t1', 't17', 't1', 't2', 't3', 't5', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+7,"['t1', 't17', 't1', 't2', 't3', 't5', 't4', 't6']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease();,
+8,"['t1', 't17', 't1', 't2', 't3', 't5', 't4', 't6', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(2); !L.Start_timer() ; ,?L.TOKENgive();
+9,"['t1', 't17', 't1', 't2', 't3', 't5', 't4', 't6', 't4', 't6']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease();,
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+4,"['t1', 't17', 't1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+4,"['t1', 't17', 't1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+5,"['t1', 't17', 't1', 't2', 't3', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+6,"['t1', 't17', 't1', 't2', 't3', 't5', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+7,"['t1', 't17', 't1', 't2', 't3', 't5', 't5', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+8,"['t1', 't17', 't1', 't2', 't3', 't5', 't5', 't4', 't6']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease();,
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+4,"['t1', 't2', 't3', 't4', 't6']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease();,
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+4,"['t1', 't2', 't3', 't4', 't6']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease();,
+5,"['t1', 't2', 't3', 't4', 't6', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(2); !L.Start_timer() ; ,?L.TOKENgive();
+6,"['t1', 't2', 't3', 't4', 't6', 't4', 't6']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease();,
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+4,"['t1', 't17', 't1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+5,"['t1', 't17', 't1', 't2', 't3', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+4,"['t1', 't17', 't1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+5,"['t1', 't17', 't1', 't2', 't3', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+6,"['t1', 't17', 't1', 't2', 't3', 't5', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+4,"['t1', 't2', 't3', 't4', 't6']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease();,
+5,"['t1', 't2', 't3', 't4', 't6', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+6,"['t1', 't2', 't3', 't4', 't6', 't5', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(2); !L.Start_timer() ; ,?L.TOKENgive();
+7,"['t1', 't2', 't3', 't4', 't6', 't5', 't4', 't6']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease();,
+8,"['t1', 't2', 't3', 't4', 't6', 't5', 't4', 't6', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+9,"['t1', 't2', 't3', 't4', 't6', 't5', 't4', 't6', 't5', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(3); !L.Start_timer() ; ,?L.TOKENgive();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+4,"['t1', 't17', 't1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+5,"['t1', 't17', 't1', 't17', 't1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+6,"['t1', 't17', 't1', 't17', 't1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+7,"['t1', 't17', 't1', 't17', 't1', 't2', 't3', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+8,"['t1', 't17', 't1', 't17', 't1', 't2', 't3', 't4', 't9']","{'no_of_segment': 0, 'blockbound': 0}",,?L.BLOCK();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+4,"['t1', 't2', 't3', 't5', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+4,"['t1', 't17', 't1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+5,"['t1', 't17', 't1', 't17', 't1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+6,"['t1', 't17', 't1', 't17', 't1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+4,"['t1', 't2', 't3', 't5', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+5,"['t1', 't2', 't3', 't5', 't4', 't6']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease();,
+6,"['t1', 't2', 't3', 't5', 't4', 't6', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+4,"['t1', 't17', 't1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+5,"['t1', 't17', 't1', 't2', 't3', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+6,"['t1', 't17', 't1', 't2', 't3', 't5', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+7,"['t1', 't17', 't1', 't2', 't3', 't5', 't5', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+8,"['t1', 't17', 't1', 't2', 't3', 't5', 't5', 't5', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+9,"['t1', 't17', 't1', 't2', 't3', 't5', 't5', 't5', 't4', 't6']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease();,
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+4,"['t1', 't17', 't1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+5,"['t1', 't17', 't1', 't17', 't1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+6,"['t1', 't17', 't1', 't17', 't1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+7,"['t1', 't17', 't1', 't17', 't1', 't2', 't3', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+8,"['t1', 't17', 't1', 't17', 't1', 't2', 't3', 't4', 't9']","{'no_of_segment': 0, 'blockbound': 0}",,?L.BLOCK();
+9,"['t1', 't17', 't1', 't17', 't1', 't2', 't3', 't4', 't9', 't11']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease() ; !U.MONITOR_INCOMPLETE(1) ; !U.DISrequest() ;,
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+4,"['t1', 't2', 't3', 't5', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+5,"['t1', 't2', 't3', 't5', 't5', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+6,"['t1', 't2', 't3', 't5', 't5', 't4', 't9']","{'no_of_segment': 0, 'blockbound': 0}",,?L.BLOCK();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+4,"['t1', 't17', 't1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+5,"['t1', 't17', 't1', 't2', 't3', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+6,"['t1', 't17', 't1', 't2', 't3', 't4', 't6']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease();,
+7,"['t1', 't17', 't1', 't2', 't3', 't4', 't6', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+8,"['t1', 't17', 't1', 't2', 't3', 't4', 't6', 't5', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+4,"['t1', 't2', 't3', 't5', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+5,"['t1', 't2', 't3', 't5', 't4', 't9']","{'no_of_segment': 0, 'blockbound': 0}",,?L.BLOCK();
+6,"['t1', 't2', 't3', 't5', 't4', 't9', 't11']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease() ; !U.MONITOR_INCOMPLETE(1) ; !U.DISrequest() ;,
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+4,"['t1', 't2', 't3', 't4', 't6']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease();,
+5,"['t1', 't2', 't3', 't4', 't6', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(2); !L.Start_timer() ; ,?L.TOKENgive();
+6,"['t1', 't2', 't3', 't4', 't6', 't4', 't9']","{'no_of_segment': 0, 'blockbound': 0}",,?L.BLOCK();
+7,"['t1', 't2', 't3', 't4', 't6', 't4', 't9', 't11']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease() ; !U.MONITOR_INCOMPLETE(2) ; !U.DISrequest() ;,
+8,"['t1', 't2', 't3', 't4', 't6', 't4', 't9', 't11', 't16']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+9,"['t1', 't2', 't3', 't4', 't6', 't4', 't9', 't11', 't16', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+4,"['t1', 't2', 't3', 't4', 't6']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease();,
+5,"['t1', 't2', 't3', 't4', 't6', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+6,"['t1', 't2', 't3', 't4', 't6', 't5', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(2); !L.Start_timer() ; ,?L.TOKENgive();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+4,"['t1', 't2', 't3', 't4', 't9']","{'no_of_segment': 0, 'blockbound': 0}",,?L.BLOCK();
+5,"['t1', 't2', 't3', 't4', 't9', 't11']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease() ; !U.MONITOR_INCOMPLETE(1) ; !U.DISrequest() ;,
+6,"['t1', 't2', 't3', 't4', 't9', 't11', 't15']","{'no_of_segment': 0, 'blockbound': 0}",,?L.ACK();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+4,"['t1', 't17', 't1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+5,"['t1', 't17', 't1', 't17', 't1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+6,"['t1', 't17', 't1', 't17', 't1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+7,"['t1', 't17', 't1', 't17', 't1', 't17', 't1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+8,"['t1', 't17', 't1', 't17', 't1', 't17', 't1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+4,"['t1', 't17', 't1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+5,"['t1', 't17', 't1', 't17', 't1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+4,"['t1', 't2', 't3', 't4', 't6']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease();,
+5,"['t1', 't2', 't3', 't4', 't6', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+6,"['t1', 't2', 't3', 't4', 't6', 't5', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(2); !L.Start_timer() ; ,?L.TOKENgive();
+7,"['t1', 't2', 't3', 't4', 't6', 't5', 't4', 't6']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease();,
+8,"['t1', 't2', 't3', 't4', 't6', 't5', 't4', 't6', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(3); !L.Start_timer() ; ,?L.TOKENgive();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+4,"['t1', 't17', 't1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+5,"['t1', 't17', 't1', 't2', 't3', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+6,"['t1', 't17', 't1', 't2', 't3', 't4', 't9']","{'no_of_segment': 0, 'blockbound': 0}",,?L.BLOCK();
+7,"['t1', 't17', 't1', 't2', 't3', 't4', 't9', 't11']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease() ; !U.MONITOR_INCOMPLETE(1) ; !U.DISrequest() ;,
+8,"['t1', 't17', 't1', 't2', 't3', 't4', 't9', 't11', 't14']","{'no_of_segment': 0, 'blockbound': 0}",,?L.BLOCK();
+9,"['t1', 't17', 't1', 't2', 't3', 't4', 't9', 't11', 't14', 't15']","{'no_of_segment': 0, 'blockbound': 0}",,?L.ACK();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+4,"['t1', 't2', 't3', 't5', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+5,"['t1', 't2', 't3', 't5', 't5', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+6,"['t1', 't2', 't3', 't5', 't5', 't4', 't6']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease();,
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+4,"['t1', 't2', 't3', 't5', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+5,"['t1', 't2', 't3', 't5', 't5', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+6,"['t1', 't2', 't3', 't5', 't5', 't4', 't9']","{'no_of_segment': 0, 'blockbound': 0}",,?L.BLOCK();
+7,"['t1', 't2', 't3', 't5', 't5', 't4', 't9', 't11']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease() ; !U.MONITOR_INCOMPLETE(1) ; !U.DISrequest() ;,
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+4,"['t1', 't17', 't1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+5,"['t1', 't17', 't1', 't17', 't1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+6,"['t1', 't17', 't1', 't17', 't1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+7,"['t1', 't17', 't1', 't17', 't1', 't2', 't3', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+8,"['t1', 't17', 't1', 't17', 't1', 't2', 't3', 't5', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+4,"['t1', 't2', 't3', 't4', 't6']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease();,
+5,"['t1', 't2', 't3', 't4', 't6', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+6,"['t1', 't2', 't3', 't4', 't6', 't5', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(2); !L.Start_timer() ; ,?L.TOKENgive();
+7,"['t1', 't2', 't3', 't4', 't6', 't5', 't4', 't9']","{'no_of_segment': 0, 'blockbound': 0}",,?L.BLOCK();
+8,"['t1', 't2', 't3', 't4', 't6', 't5', 't4', 't9', 't11']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease() ; !U.MONITOR_INCOMPLETE(2) ; !U.DISrequest() ;,
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+4,"['t1', 't17', 't1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+5,"['t1', 't17', 't1', 't2', 't3', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+6,"['t1', 't17', 't1', 't2', 't3', 't5', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+4,"['t1', 't17', 't1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+5,"['t1', 't17', 't1', 't2', 't3', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+6,"['t1', 't17', 't1', 't2', 't3', 't4', 't9']","{'no_of_segment': 0, 'blockbound': 0}",,?L.BLOCK();
+7,"['t1', 't17', 't1', 't2', 't3', 't4', 't9', 't11']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease() ; !U.MONITOR_INCOMPLETE(1) ; !U.DISrequest() ;,
+8,"['t1', 't17', 't1', 't2', 't3', 't4', 't9', 't11', 't16']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+9,"['t1', 't17', 't1', 't2', 't3', 't4', 't9', 't11', 't16', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+4,"['t1', 't17', 't1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+5,"['t1', 't17', 't1', 't2', 't3', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+6,"['t1', 't17', 't1', 't2', 't3', 't4', 't6']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease();,
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+4,"['t1', 't2', 't3', 't4', 't9']","{'no_of_segment': 0, 'blockbound': 0}",,?L.BLOCK();
+5,"['t1', 't2', 't3', 't4', 't9', 't11']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease() ; !U.MONITOR_INCOMPLETE(1) ; !U.DISrequest() ;,
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+4,"['t1', 't17', 't1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+5,"['t1', 't17', 't1', 't17', 't1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+4,"['t1', 't17', 't1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+5,"['t1', 't17', 't1', 't17', 't1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+6,"['t1', 't17', 't1', 't17', 't1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+7,"['t1', 't17', 't1', 't17', 't1', 't2', 't3', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+8,"['t1', 't17', 't1', 't17', 't1', 't2', 't3', 't4', 't9']","{'no_of_segment': 0, 'blockbound': 0}",,?L.BLOCK();
+9,"['t1', 't17', 't1', 't17', 't1', 't2', 't3', 't4', 't9', 't11']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease() ; !U.MONITOR_INCOMPLETE(1) ; !U.DISrequest() ;,
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+4,"['t1', 't2', 't3', 't4', 't6']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease();,
+5,"['t1', 't2', 't3', 't4', 't6', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(2); !L.Start_timer() ; ,?L.TOKENgive();
+6,"['t1', 't2', 't3', 't4', 't6', 't4', 't6']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease();,
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+4,"['t1', 't2', 't3', 't4', 't6']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease();,
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+4,"['t1', 't2', 't3', 't5', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+4,"['t1', 't17', 't1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+5,"['t1', 't17', 't1', 't17', 't1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+6,"['t1', 't17', 't1', 't17', 't1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+7,"['t1', 't17', 't1', 't17', 't1', 't2', 't3', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+8,"['t1', 't17', 't1', 't17', 't1', 't2', 't3', 't5', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+9,"['t1', 't17', 't1', 't17', 't1', 't2', 't3', 't5', 't5', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+4,"['t1', 't17', 't1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+5,"['t1', 't17', 't1', 't17', 't1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+6,"['t1', 't17', 't1', 't17', 't1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+7,"['t1', 't17', 't1', 't17', 't1', 't2', 't3', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+8,"['t1', 't17', 't1', 't17', 't1', 't2', 't3', 't5', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+4,"['t1', 't17', 't1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+5,"['t1', 't17', 't1', 't2', 't3', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+4,"['t1', 't2', 't3', 't5', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+4,"['t1', 't17', 't1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+5,"['t1', 't17', 't1', 't2', 't3', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+6,"['t1', 't17', 't1', 't2', 't3', 't5', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+7,"['t1', 't17', 't1', 't2', 't3', 't5', 't5', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+8,"['t1', 't17', 't1', 't2', 't3', 't5', 't5', 't5', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+4,"['t1', 't2', 't3', 't5', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+5,"['t1', 't2', 't3', 't5', 't5', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+6,"['t1', 't2', 't3', 't5', 't5', 't5', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+7,"['t1', 't2', 't3', 't5', 't5', 't5', 't4', 't6']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease();,
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+4,"['t1', 't2', 't3', 't5', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+5,"['t1', 't2', 't3', 't5', 't4', 't6']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease();,
+6,"['t1', 't2', 't3', 't5', 't4', 't6', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+7,"['t1', 't2', 't3', 't5', 't4', 't6', 't5', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(2); !L.Start_timer() ; ,?L.TOKENgive();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+4,"['t1', 't17', 't1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+4,"['t1', 't2', 't3', 't5', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+5,"['t1', 't2', 't3', 't5', 't5', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+6,"['t1', 't2', 't3', 't5', 't5', 't4', 't6']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease();,
+7,"['t1', 't2', 't3', 't5', 't5', 't4', 't6', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(2); !L.Start_timer() ; ,?L.TOKENgive();
+8,"['t1', 't2', 't3', 't5', 't5', 't4', 't6', 't4', 't9']","{'no_of_segment': 0, 'blockbound': 0}",,?L.BLOCK();
+9,"['t1', 't2', 't3', 't5', 't5', 't4', 't6', 't4', 't9', 't11']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease() ; !U.MONITOR_INCOMPLETE(2) ; !U.DISrequest() ;,
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+4,"['t1', 't17', 't1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+5,"['t1', 't17', 't1', 't17', 't1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+6,"['t1', 't17', 't1', 't17', 't1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+7,"['t1', 't17', 't1', 't17', 't1', 't2', 't3', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+8,"['t1', 't17', 't1', 't17', 't1', 't2', 't3', 't4', 't9']","{'no_of_segment': 0, 'blockbound': 0}",,?L.BLOCK();
+9,"['t1', 't17', 't1', 't17', 't1', 't2', 't3', 't4', 't9', 't11']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease() ; !U.MONITOR_INCOMPLETE(1) ; !U.DISrequest() ;,
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+4,"['t1', 't17', 't1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+5,"['t1', 't17', 't1', 't17', 't1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+6,"['t1', 't17', 't1', 't17', 't1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+7,"['t1', 't17', 't1', 't17', 't1', 't17', 't1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+8,"['t1', 't17', 't1', 't17', 't1', 't17', 't1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+9,"['t1', 't17', 't1', 't17', 't1', 't17', 't1', 't2', 't3', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+4,"['t1', 't2', 't3', 't5', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+5,"['t1', 't2', 't3', 't5', 't4', 't6']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease();,
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+4,"['t1', 't2', 't3', 't5', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+4,"['t1', 't17', 't1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+5,"['t1', 't17', 't1', 't2', 't3', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+6,"['t1', 't17', 't1', 't2', 't3', 't5', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+7,"['t1', 't17', 't1', 't2', 't3', 't5', 't5', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+4,"['t1', 't17', 't1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+5,"['t1', 't17', 't1', 't17', 't1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+6,"['t1', 't17', 't1', 't17', 't1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+7,"['t1', 't17', 't1', 't17', 't1', 't17', 't1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+8,"['t1', 't17', 't1', 't17', 't1', 't17', 't1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+9,"['t1', 't17', 't1', 't17', 't1', 't17', 't1', 't2', 't3', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+4,"['t1', 't2', 't3', 't5', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+5,"['t1', 't2', 't3', 't5', 't4', 't9']","{'no_of_segment': 0, 'blockbound': 0}",,?L.BLOCK();
+6,"['t1', 't2', 't3', 't5', 't4', 't9', 't11']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease() ; !U.MONITOR_INCOMPLETE(1) ; !U.DISrequest() ;,
+7,"['t1', 't2', 't3', 't5', 't4', 't9', 't11', 't13']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+8,"['t1', 't2', 't3', 't5', 't4', 't9', 't11', 't13', 't16']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+9,"['t1', 't2', 't3', 't5', 't4', 't9', 't11', 't13', 't16', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+4,"['t1', 't2', 't3', 't4', 't9']","{'no_of_segment': 0, 'blockbound': 0}",,?L.BLOCK();
+5,"['t1', 't2', 't3', 't4', 't9', 't11']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease() ; !U.MONITOR_INCOMPLETE(1) ; !U.DISrequest() ;,
+6,"['t1', 't2', 't3', 't4', 't9', 't11', 't13']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+7,"['t1', 't2', 't3', 't4', 't9', 't11', 't13', 't15']","{'no_of_segment': 0, 'blockbound': 0}",,?L.ACK();
+8,"['t1', 't2', 't3', 't4', 't9', 't11', 't13', 't15', 't15']","{'no_of_segment': 0, 'blockbound': 0}",,?L.ACK();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+4,"['t1', 't2', 't3', 't5', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+5,"['t1', 't2', 't3', 't5', 't4', 't9']","{'no_of_segment': 0, 'blockbound': 0}",,?L.BLOCK();
+6,"['t1', 't2', 't3', 't5', 't4', 't9', 't11']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease() ; !U.MONITOR_INCOMPLETE(1) ; !U.DISrequest() ;,
+7,"['t1', 't2', 't3', 't5', 't4', 't9', 't11', 't15']","{'no_of_segment': 0, 'blockbound': 0}",,?L.ACK();
+8,"['t1', 't2', 't3', 't5', 't4', 't9', 't11', 't15', 't15']","{'no_of_segment': 0, 'blockbound': 0}",,?L.ACK();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+4,"['t1', 't2', 't3', 't4', 't9']","{'no_of_segment': 0, 'blockbound': 0}",,?L.BLOCK();
+5,"['t1', 't2', 't3', 't4', 't9', 't11']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease() ; !U.MONITOR_INCOMPLETE(1) ; !U.DISrequest() ;,
+6,"['t1', 't2', 't3', 't4', 't9', 't11', 't16']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+7,"['t1', 't2', 't3', 't4', 't9', 't11', 't16', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+8,"['t1', 't2', 't3', 't4', 't9', 't11', 't16', 't1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+9,"['t1', 't2', 't3', 't4', 't9', 't11', 't16', 't1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+4,"['t1', 't2', 't3', 't4', 't6']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease();,
+5,"['t1', 't2', 't3', 't4', 't6', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+4,"['t1', 't17', 't1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+4,"['t1', 't17', 't1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+5,"['t1', 't17', 't1', 't2', 't3', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+6,"['t1', 't17', 't1', 't2', 't3', 't4', 't9']","{'no_of_segment': 0, 'blockbound': 0}",,?L.BLOCK();
+7,"['t1', 't17', 't1', 't2', 't3', 't4', 't9', 't11']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease() ; !U.MONITOR_INCOMPLETE(1) ; !U.DISrequest() ;,
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+4,"['t1', 't2', 't3', 't5', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+4,"['t1', 't17', 't1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+5,"['t1', 't17', 't1', 't17', 't1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+6,"['t1', 't17', 't1', 't17', 't1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+4,"['t1', 't2', 't3', 't5', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+5,"['t1', 't2', 't3', 't5', 't4', 't9']","{'no_of_segment': 0, 'blockbound': 0}",,?L.BLOCK();
+6,"['t1', 't2', 't3', 't5', 't4', 't9', 't11']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease() ; !U.MONITOR_INCOMPLETE(1) ; !U.DISrequest() ;,
+7,"['t1', 't2', 't3', 't5', 't4', 't9', 't11', 't13']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+4,"['t1', 't2', 't3', 't4', 't6']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease();,
+5,"['t1', 't2', 't3', 't4', 't6', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+6,"['t1', 't2', 't3', 't4', 't6', 't5', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+7,"['t1', 't2', 't3', 't4', 't6', 't5', 't5', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+8,"['t1', 't2', 't3', 't4', 't6', 't5', 't5', 't5', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+4,"['t1', 't2', 't3', 't5', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+5,"['t1', 't2', 't3', 't5', 't5', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+6,"['t1', 't2', 't3', 't5', 't5', 't5', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+7,"['t1', 't2', 't3', 't5', 't5', 't5', 't5', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+4,"['t1', 't2', 't3', 't4', 't6']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease();,
+5,"['t1', 't2', 't3', 't4', 't6', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(2); !L.Start_timer() ; ,?L.TOKENgive();
+6,"['t1', 't2', 't3', 't4', 't6', 't4', 't6']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease();,
+7,"['t1', 't2', 't3', 't4', 't6', 't4', 't6', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(3); !L.Start_timer() ; ,?L.TOKENgive();
+8,"['t1', 't2', 't3', 't4', 't6', 't4', 't6', 't4', 't6']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease();,
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+4,"['t1', 't2', 't3', 't5', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+5,"['t1', 't2', 't3', 't5', 't4', 't9']","{'no_of_segment': 0, 'blockbound': 0}",,?L.BLOCK();
+6,"['t1', 't2', 't3', 't5', 't4', 't9', 't11']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease() ; !U.MONITOR_INCOMPLETE(1) ; !U.DISrequest() ;,
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+4,"['t1', 't17', 't1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+5,"['t1', 't17', 't1', 't2', 't3', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+6,"['t1', 't17', 't1', 't2', 't3', 't4', 't9']","{'no_of_segment': 0, 'blockbound': 0}",,?L.BLOCK();
+7,"['t1', 't17', 't1', 't2', 't3', 't4', 't9', 't11']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease() ; !U.MONITOR_INCOMPLETE(1) ; !U.DISrequest() ;,
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+4,"['t1', 't2', 't3', 't4', 't9']","{'no_of_segment': 0, 'blockbound': 0}",,?L.BLOCK();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+4,"['t1', 't2', 't3', 't4', 't6']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease();,
+5,"['t1', 't2', 't3', 't4', 't6', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(2); !L.Start_timer() ; ,?L.TOKENgive();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+4,"['t1', 't17', 't1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+5,"['t1', 't17', 't1', 't2', 't3', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+4,"['t1', 't2', 't3', 't4', 't9']","{'no_of_segment': 0, 'blockbound': 0}",,?L.BLOCK();
+5,"['t1', 't2', 't3', 't4', 't9', 't11']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease() ; !U.MONITOR_INCOMPLETE(1) ; !U.DISrequest() ;,
+6,"['t1', 't2', 't3', 't4', 't9', 't11', 't15']","{'no_of_segment': 0, 'blockbound': 0}",,?L.ACK();
+7,"['t1', 't2', 't3', 't4', 't9', 't11', 't15', 't16']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+8,"['t1', 't2', 't3', 't4', 't9', 't11', 't15', 't16', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+4,"['t1', 't17', 't1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+5,"['t1', 't17', 't1', 't2', 't3', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+6,"['t1', 't17', 't1', 't2', 't3', 't4', 't9']","{'no_of_segment': 0, 'blockbound': 0}",,?L.BLOCK();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+4,"['t1', 't17', 't1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+5,"['t1', 't17', 't1', 't17', 't1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+6,"['t1', 't17', 't1', 't17', 't1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+7,"['t1', 't17', 't1', 't17', 't1', 't17', 't1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+4,"['t1', 't2', 't3', 't4', 't6']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease();,
+5,"['t1', 't2', 't3', 't4', 't6', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(2); !L.Start_timer() ; ,?L.TOKENgive();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+4,"['t1', 't17', 't1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+5,"['t1', 't17', 't1', 't17', 't1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+4,"['t1', 't2', 't3', 't5', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+4,"['t1', 't17', 't1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+5,"['t1', 't17', 't1', 't17', 't1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+6,"['t1', 't17', 't1', 't17', 't1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+7,"['t1', 't17', 't1', 't17', 't1', 't17', 't1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+8,"['t1', 't17', 't1', 't17', 't1', 't17', 't1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+9,"['t1', 't17', 't1', 't17', 't1', 't17', 't1', 't2', 't3', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+4,"['t1', 't17', 't1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+5,"['t1', 't17', 't1', 't17', 't1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+6,"['t1', 't17', 't1', 't17', 't1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+4,"['t1', 't17', 't1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+5,"['t1', 't17', 't1', 't2', 't3', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+4,"['t1', 't17', 't1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+5,"['t1', 't17', 't1', 't2', 't3', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+6,"['t1', 't17', 't1', 't2', 't3', 't4', 't6']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease();,
+7,"['t1', 't17', 't1', 't2', 't3', 't4', 't6', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(2); !L.Start_timer() ; ,?L.TOKENgive();
+8,"['t1', 't17', 't1', 't2', 't3', 't4', 't6', 't4', 't6']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease();,
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+4,"['t1', 't2', 't3', 't4', 't9']","{'no_of_segment': 0, 'blockbound': 0}",,?L.BLOCK();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+4,"['t1', 't2', 't3', 't4', 't6']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease();,
+5,"['t1', 't2', 't3', 't4', 't6', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(2); !L.Start_timer() ; ,?L.TOKENgive();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+4,"['t1', 't2', 't3', 't5', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+5,"['t1', 't2', 't3', 't5', 't5', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+6,"['t1', 't2', 't3', 't5', 't5', 't5', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+7,"['t1', 't2', 't3', 't5', 't5', 't5', 't4', 't9']","{'no_of_segment': 0, 'blockbound': 0}",,?L.BLOCK();
+8,"['t1', 't2', 't3', 't5', 't5', 't5', 't4', 't9', 't11']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease() ; !U.MONITOR_INCOMPLETE(1) ; !U.DISrequest() ;,
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+4,"['t1', 't17', 't1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+5,"['t1', 't17', 't1', 't2', 't3', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+6,"['t1', 't17', 't1', 't2', 't3', 't5', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+7,"['t1', 't17', 't1', 't2', 't3', 't5', 't4', 't9']","{'no_of_segment': 0, 'blockbound': 0}",,?L.BLOCK();
+8,"['t1', 't17', 't1', 't2', 't3', 't5', 't4', 't9', 't11']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease() ; !U.MONITOR_INCOMPLETE(1) ; !U.DISrequest() ;,
+9,"['t1', 't17', 't1', 't2', 't3', 't5', 't4', 't9', 't11', 't15']","{'no_of_segment': 0, 'blockbound': 0}",,?L.ACK();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+4,"['t1', 't17', 't1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+5,"['t1', 't17', 't1', 't2', 't3', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+4,"['t1', 't2', 't3', 't4', 't6']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease();,
+5,"['t1', 't2', 't3', 't4', 't6', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(2); !L.Start_timer() ; ,?L.TOKENgive();
+6,"['t1', 't2', 't3', 't4', 't6', 't4', 't6']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease();,
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+4,"['t1', 't17', 't1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+5,"['t1', 't17', 't1', 't17', 't1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+4,"['t1', 't2', 't3', 't5', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+5,"['t1', 't2', 't3', 't5', 't4', 't6']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease();,
+6,"['t1', 't2', 't3', 't5', 't4', 't6', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(2); !L.Start_timer() ; ,?L.TOKENgive();
+7,"['t1', 't2', 't3', 't5', 't4', 't6', 't4', 't9']","{'no_of_segment': 0, 'blockbound': 0}",,?L.BLOCK();
+8,"['t1', 't2', 't3', 't5', 't4', 't6', 't4', 't9', 't11']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease() ; !U.MONITOR_INCOMPLETE(2) ; !U.DISrequest() ;,
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+4,"['t1', 't17', 't1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+5,"['t1', 't17', 't1', 't2', 't3', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+6,"['t1', 't17', 't1', 't2', 't3', 't4', 't6']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease();,
+7,"['t1', 't17', 't1', 't2', 't3', 't4', 't6', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+8,"['t1', 't17', 't1', 't2', 't3', 't4', 't6', 't5', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(2); !L.Start_timer() ; ,?L.TOKENgive();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+4,"['t1', 't2', 't3', 't5', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+4,"['t1', 't2', 't3', 't4', 't6']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease();,
+5,"['t1', 't2', 't3', 't4', 't6', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(2); !L.Start_timer() ; ,?L.TOKENgive();
+6,"['t1', 't2', 't3', 't4', 't6', 't4', 't9']","{'no_of_segment': 0, 'blockbound': 0}",,?L.BLOCK();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+4,"['t1', 't2', 't3', 't4', 't9']","{'no_of_segment': 0, 'blockbound': 0}",,?L.BLOCK();
+5,"['t1', 't2', 't3', 't4', 't9', 't11']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease() ; !U.MONITOR_INCOMPLETE(1) ; !U.DISrequest() ;,
+6,"['t1', 't2', 't3', 't4', 't9', 't11', 't13']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+7,"['t1', 't2', 't3', 't4', 't9', 't11', 't13', 't16']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+8,"['t1', 't2', 't3', 't4', 't9', 't11', 't13', 't16', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+9,"['t1', 't2', 't3', 't4', 't9', 't11', 't13', 't16', 't1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+4,"['t1', 't2', 't3', 't5', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+5,"['t1', 't2', 't3', 't5', 't5', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+6,"['t1', 't2', 't3', 't5', 't5', 't4', 't9']","{'no_of_segment': 0, 'blockbound': 0}",,?L.BLOCK();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+4,"['t1', 't2', 't3', 't5', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+5,"['t1', 't2', 't3', 't5', 't5', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+6,"['t1', 't2', 't3', 't5', 't5', 't4', 't6']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease();,
+7,"['t1', 't2', 't3', 't5', 't5', 't4', 't6', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+8,"['t1', 't2', 't3', 't5', 't5', 't4', 't6', 't5', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+9,"['t1', 't2', 't3', 't5', 't5', 't4', 't6', 't5', 't5', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(2); !L.Start_timer() ; ,?L.TOKENgive();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+4,"['t1', 't2', 't3', 't5', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+4,"['t1', 't2', 't3', 't4', 't9']","{'no_of_segment': 0, 'blockbound': 0}",,?L.BLOCK();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+4,"['t1', 't2', 't3', 't4', 't6']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease();,
+5,"['t1', 't2', 't3', 't4', 't6', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(2); !L.Start_timer() ; ,?L.TOKENgive();
+6,"['t1', 't2', 't3', 't4', 't6', 't4', 't6']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease();,
+7,"['t1', 't2', 't3', 't4', 't6', 't4', 't6', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+4,"['t1', 't17', 't1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+5,"['t1', 't17', 't1', 't17', 't1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+6,"['t1', 't17', 't1', 't17', 't1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+4,"['t1', 't17', 't1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+5,"['t1', 't17', 't1', 't17', 't1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+6,"['t1', 't17', 't1', 't17', 't1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+7,"['t1', 't17', 't1', 't17', 't1', 't17', 't1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+8,"['t1', 't17', 't1', 't17', 't1', 't17', 't1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+9,"['t1', 't17', 't1', 't17', 't1', 't17', 't1', 't2', 't3', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+4,"['t1', 't2', 't3', 't4', 't6']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease();,
+5,"['t1', 't2', 't3', 't4', 't6', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(2); !L.Start_timer() ; ,?L.TOKENgive();
+6,"['t1', 't2', 't3', 't4', 't6', 't4', 't9']","{'no_of_segment': 0, 'blockbound': 0}",,?L.BLOCK();
+7,"['t1', 't2', 't3', 't4', 't6', 't4', 't9', 't11']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease() ; !U.MONITOR_INCOMPLETE(2) ; !U.DISrequest() ;,
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+4,"['t1', 't17', 't1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+4,"['t1', 't17', 't1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+5,"['t1', 't17', 't1', 't17', 't1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+6,"['t1', 't17', 't1', 't17', 't1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+7,"['t1', 't17', 't1', 't17', 't1', 't2', 't3', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+8,"['t1', 't17', 't1', 't17', 't1', 't2', 't3', 't5', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+4,"['t1', 't17', 't1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+5,"['t1', 't17', 't1', 't17', 't1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+6,"['t1', 't17', 't1', 't17', 't1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+7,"['t1', 't17', 't1', 't17', 't1', 't17', 't1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+8,"['t1', 't17', 't1', 't17', 't1', 't17', 't1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+4,"['t1', 't2', 't3', 't5', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+5,"['t1', 't2', 't3', 't5', 't5', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+6,"['t1', 't2', 't3', 't5', 't5', 't4', 't6']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease();,
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+4,"['t1', 't17', 't1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+5,"['t1', 't17', 't1', 't2', 't3', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+6,"['t1', 't17', 't1', 't2', 't3', 't4', 't6']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease();,
+7,"['t1', 't17', 't1', 't2', 't3', 't4', 't6', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(2); !L.Start_timer() ; ,?L.TOKENgive();
+8,"['t1', 't17', 't1', 't2', 't3', 't4', 't6', 't4', 't9']","{'no_of_segment': 0, 'blockbound': 0}",,?L.BLOCK();
+9,"['t1', 't17', 't1', 't2', 't3', 't4', 't6', 't4', 't9', 't11']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease() ; !U.MONITOR_INCOMPLETE(2) ; !U.DISrequest() ;,
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+4,"['t1', 't17', 't1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+4,"['t1', 't17', 't1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+5,"['t1', 't17', 't1', 't17', 't1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+4,"['t1', 't2', 't3', 't4', 't9']","{'no_of_segment': 0, 'blockbound': 0}",,?L.BLOCK();
+5,"['t1', 't2', 't3', 't4', 't9', 't11']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease() ; !U.MONITOR_INCOMPLETE(1) ; !U.DISrequest() ;,
+6,"['t1', 't2', 't3', 't4', 't9', 't11', 't14']","{'no_of_segment': 0, 'blockbound': 0}",,?L.BLOCK();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+4,"['t1', 't2', 't3', 't4', 't6']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease();,
+5,"['t1', 't2', 't3', 't4', 't6', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+4,"['t1', 't2', 't3', 't4', 't6']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease();,
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+4,"['t1', 't2', 't3', 't4', 't9']","{'no_of_segment': 0, 'blockbound': 0}",,?L.BLOCK();
+5,"['t1', 't2', 't3', 't4', 't9', 't11']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease() ; !U.MONITOR_INCOMPLETE(1) ; !U.DISrequest() ;,
+6,"['t1', 't2', 't3', 't4', 't9', 't11', 't16']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+7,"['t1', 't2', 't3', 't4', 't9', 't11', 't16', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+8,"['t1', 't2', 't3', 't4', 't9', 't11', 't16', 't1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+4,"['t1', 't2', 't3', 't5', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+5,"['t1', 't2', 't3', 't5', 't5', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+6,"['t1', 't2', 't3', 't5', 't5', 't4', 't6']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease();,
+7,"['t1', 't2', 't3', 't5', 't5', 't4', 't6', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+8,"['t1', 't2', 't3', 't5', 't5', 't4', 't6', 't5', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+4,"['t1', 't2', 't3', 't4', 't9']","{'no_of_segment': 0, 'blockbound': 0}",,?L.BLOCK();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+4,"['t1', 't17', 't1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+5,"['t1', 't17', 't1', 't2', 't3', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+6,"['t1', 't17', 't1', 't2', 't3', 't5', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+7,"['t1', 't17', 't1', 't2', 't3', 't5', 't5', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+8,"['t1', 't17', 't1', 't2', 't3', 't5', 't5', 't4', 't6']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease();,
+9,"['t1', 't17', 't1', 't2', 't3', 't5', 't5', 't4', 't6', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+4,"['t1', 't2', 't3', 't4', 't9']","{'no_of_segment': 0, 'blockbound': 0}",,?L.BLOCK();
+5,"['t1', 't2', 't3', 't4', 't9', 't11']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease() ; !U.MONITOR_INCOMPLETE(1) ; !U.DISrequest() ;,
+6,"['t1', 't2', 't3', 't4', 't9', 't11', 't16']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+7,"['t1', 't2', 't3', 't4', 't9', 't11', 't16', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+4,"['t1', 't2', 't3', 't4', 't6']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease();,
+5,"['t1', 't2', 't3', 't4', 't6', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(2); !L.Start_timer() ; ,?L.TOKENgive();
+6,"['t1', 't2', 't3', 't4', 't6', 't4', 't9']","{'no_of_segment': 0, 'blockbound': 0}",,?L.BLOCK();
+7,"['t1', 't2', 't3', 't4', 't6', 't4', 't9', 't11']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease() ; !U.MONITOR_INCOMPLETE(2) ; !U.DISrequest() ;,
+8,"['t1', 't2', 't3', 't4', 't6', 't4', 't9', 't11', 't16']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+9,"['t1', 't2', 't3', 't4', 't6', 't4', 't9', 't11', 't16', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+4,"['t1', 't2', 't3', 't5', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+5,"['t1', 't2', 't3', 't5', 't5', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+6,"['t1', 't2', 't3', 't5', 't5', 't4', 't9']","{'no_of_segment': 0, 'blockbound': 0}",,?L.BLOCK();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+4,"['t1', 't2', 't3', 't4', 't6']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease();,
+5,"['t1', 't2', 't3', 't4', 't6', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+4,"['t1', 't17', 't1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+5,"['t1', 't17', 't1', 't17', 't1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+6,"['t1', 't17', 't1', 't17', 't1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+7,"['t1', 't17', 't1', 't17', 't1', 't17', 't1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+4,"['t1', 't17', 't1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+5,"['t1', 't17', 't1', 't2', 't3', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+6,"['t1', 't17', 't1', 't2', 't3', 't5', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+7,"['t1', 't17', 't1', 't2', 't3', 't5', 't4', 't9']","{'no_of_segment': 0, 'blockbound': 0}",,?L.BLOCK();
+8,"['t1', 't17', 't1', 't2', 't3', 't5', 't4', 't9', 't11']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease() ; !U.MONITOR_INCOMPLETE(1) ; !U.DISrequest() ;,
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+4,"['t1', 't2', 't3', 't4', 't9']","{'no_of_segment': 0, 'blockbound': 0}",,?L.BLOCK();
+5,"['t1', 't2', 't3', 't4', 't9', 't11']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease() ; !U.MONITOR_INCOMPLETE(1) ; !U.DISrequest() ;,
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+4,"['t1', 't17', 't1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+5,"['t1', 't17', 't1', 't2', 't3', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+6,"['t1', 't17', 't1', 't2', 't3', 't5', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+7,"['t1', 't17', 't1', 't2', 't3', 't5', 't5', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+8,"['t1', 't17', 't1', 't2', 't3', 't5', 't5', 't4', 't9']","{'no_of_segment': 0, 'blockbound': 0}",,?L.BLOCK();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+4,"['t1', 't17', 't1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+4,"['t1', 't17', 't1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+5,"['t1', 't17', 't1', 't2', 't3', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+6,"['t1', 't17', 't1', 't2', 't3', 't5', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+7,"['t1', 't17', 't1', 't2', 't3', 't5', 't5', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+4,"['t1', 't17', 't1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+5,"['t1', 't17', 't1', 't17', 't1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+6,"['t1', 't17', 't1', 't17', 't1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+7,"['t1', 't17', 't1', 't17', 't1', 't17', 't1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+8,"['t1', 't17', 't1', 't17', 't1', 't17', 't1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+4,"['t1', 't2', 't3', 't4', 't6']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease();,
+5,"['t1', 't2', 't3', 't4', 't6', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+6,"['t1', 't2', 't3', 't4', 't6', 't5', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+7,"['t1', 't2', 't3', 't4', 't6', 't5', 't5', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+4,"['t1', 't2', 't3', 't5', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+5,"['t1', 't2', 't3', 't5', 't4', 't9']","{'no_of_segment': 0, 'blockbound': 0}",,?L.BLOCK();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+4,"['t1', 't17', 't1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+5,"['t1', 't17', 't1', 't17', 't1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+6,"['t1', 't17', 't1', 't17', 't1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+4,"['t1', 't17', 't1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+5,"['t1', 't17', 't1', 't17', 't1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+6,"['t1', 't17', 't1', 't17', 't1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+7,"['t1', 't17', 't1', 't17', 't1', 't2', 't3', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+8,"['t1', 't17', 't1', 't17', 't1', 't2', 't3', 't5', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+4,"['t1', 't2', 't3', 't4', 't6']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease();,
+5,"['t1', 't2', 't3', 't4', 't6', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(2); !L.Start_timer() ; ,?L.TOKENgive();
+6,"['t1', 't2', 't3', 't4', 't6', 't4', 't6']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease();,
+7,"['t1', 't2', 't3', 't4', 't6', 't4', 't6', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(3); !L.Start_timer() ; ,?L.TOKENgive();
+8,"['t1', 't2', 't3', 't4', 't6', 't4', 't6', 't4', 't6']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease();,
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+4,"['t1', 't2', 't3', 't4', 't6']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease();,
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+4,"['t1', 't17', 't1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+4,"['t1', 't2', 't3', 't4', 't6']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease();,
+5,"['t1', 't2', 't3', 't4', 't6', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+6,"['t1', 't2', 't3', 't4', 't6', 't5', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+4,"['t1', 't17', 't1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+5,"['t1', 't17', 't1', 't2', 't3', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+6,"['t1', 't17', 't1', 't2', 't3', 't4', 't9']","{'no_of_segment': 0, 'blockbound': 0}",,?L.BLOCK();
+7,"['t1', 't17', 't1', 't2', 't3', 't4', 't9', 't11']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease() ; !U.MONITOR_INCOMPLETE(1) ; !U.DISrequest() ;,
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+4,"['t1', 't17', 't1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+5,"['t1', 't17', 't1', 't2', 't3', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+6,"['t1', 't17', 't1', 't2', 't3', 't4', 't6']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease();,
+7,"['t1', 't17', 't1', 't2', 't3', 't4', 't6', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+8,"['t1', 't17', 't1', 't2', 't3', 't4', 't6', 't5', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(2); !L.Start_timer() ; ,?L.TOKENgive();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+4,"['t1', 't2', 't3', 't5', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+5,"['t1', 't2', 't3', 't5', 't5', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+6,"['t1', 't2', 't3', 't5', 't5', 't4', 't9']","{'no_of_segment': 0, 'blockbound': 0}",,?L.BLOCK();
+7,"['t1', 't2', 't3', 't5', 't5', 't4', 't9', 't11']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease() ; !U.MONITOR_INCOMPLETE(1) ; !U.DISrequest() ;,
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+4,"['t1', 't17', 't1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+5,"['t1', 't17', 't1', 't2', 't3', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+6,"['t1', 't17', 't1', 't2', 't3', 't5', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+7,"['t1', 't17', 't1', 't2', 't3', 't5', 't5', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+4,"['t1', 't2', 't3', 't5', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+5,"['t1', 't2', 't3', 't5', 't4', 't9']","{'no_of_segment': 0, 'blockbound': 0}",,?L.BLOCK();
+6,"['t1', 't2', 't3', 't5', 't4', 't9', 't11']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease() ; !U.MONITOR_INCOMPLETE(1) ; !U.DISrequest() ;,
+7,"['t1', 't2', 't3', 't5', 't4', 't9', 't11', 't14']","{'no_of_segment': 0, 'blockbound': 0}",,?L.BLOCK();
+8,"['t1', 't2', 't3', 't5', 't4', 't9', 't11', 't14', 't14']","{'no_of_segment': 0, 'blockbound': 0}",,?L.BLOCK();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+4,"['t1', 't17', 't1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+5,"['t1', 't17', 't1', 't2', 't3', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+6,"['t1', 't17', 't1', 't2', 't3', 't4', 't6']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease();,
+7,"['t1', 't17', 't1', 't2', 't3', 't4', 't6', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+8,"['t1', 't17', 't1', 't2', 't3', 't4', 't6', 't5', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(2); !L.Start_timer() ; ,?L.TOKENgive();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+4,"['t1', 't2', 't3', 't5', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+4,"['t1', 't17', 't1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+5,"['t1', 't17', 't1', 't17', 't1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+6,"['t1', 't17', 't1', 't17', 't1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+4,"['t1', 't2', 't3', 't4', 't6']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease();,
+5,"['t1', 't2', 't3', 't4', 't6', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(2); !L.Start_timer() ; ,?L.TOKENgive();
+6,"['t1', 't2', 't3', 't4', 't6', 't4', 't6']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease();,
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+4,"['t1', 't2', 't3', 't5', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+5,"['t1', 't2', 't3', 't5', 't4', 't9']","{'no_of_segment': 0, 'blockbound': 0}",,?L.BLOCK();
+6,"['t1', 't2', 't3', 't5', 't4', 't9', 't11']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease() ; !U.MONITOR_INCOMPLETE(1) ; !U.DISrequest() ;,
+7,"['t1', 't2', 't3', 't5', 't4', 't9', 't11', 't15']","{'no_of_segment': 0, 'blockbound': 0}",,?L.ACK();
+8,"['t1', 't2', 't3', 't5', 't4', 't9', 't11', 't15', 't16']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+9,"['t1', 't2', 't3', 't5', 't4', 't9', 't11', 't15', 't16', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+4,"['t1', 't17', 't1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+5,"['t1', 't17', 't1', 't17', 't1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+4,"['t1', 't2', 't3', 't5', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+4,"['t1', 't2', 't3', 't5', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+4,"['t1', 't17', 't1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+5,"['t1', 't17', 't1', 't17', 't1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+6,"['t1', 't17', 't1', 't17', 't1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+7,"['t1', 't17', 't1', 't17', 't1', 't2', 't3', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+8,"['t1', 't17', 't1', 't17', 't1', 't2', 't3', 't5', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+9,"['t1', 't17', 't1', 't17', 't1', 't2', 't3', 't5', 't5', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+4,"['t1', 't17', 't1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+5,"['t1', 't17', 't1', 't2', 't3', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+6,"['t1', 't17', 't1', 't2', 't3', 't5', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+7,"['t1', 't17', 't1', 't2', 't3', 't5', 't4', 't6']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease();,
+8,"['t1', 't17', 't1', 't2', 't3', 't5', 't4', 't6', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+9,"['t1', 't17', 't1', 't2', 't3', 't5', 't4', 't6', 't5', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(2); !L.Start_timer() ; ,?L.TOKENgive();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+4,"['t1', 't17', 't1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+5,"['t1', 't17', 't1', 't2', 't3', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+6,"['t1', 't17', 't1', 't2', 't3', 't5', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+4,"['t1', 't2', 't3', 't5', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+5,"['t1', 't2', 't3', 't5', 't4', 't6']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease();,
+6,"['t1', 't2', 't3', 't5', 't4', 't6', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(2); !L.Start_timer() ; ,?L.TOKENgive();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+4,"['t1', 't2', 't3', 't4', 't6']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease();,
+5,"['t1', 't2', 't3', 't4', 't6', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(2); !L.Start_timer() ; ,?L.TOKENgive();
+6,"['t1', 't2', 't3', 't4', 't6', 't4', 't6']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease();,
+7,"['t1', 't2', 't3', 't4', 't6', 't4', 't6', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+4,"['t1', 't2', 't3', 't4', 't9']","{'no_of_segment': 0, 'blockbound': 0}",,?L.BLOCK();
+5,"['t1', 't2', 't3', 't4', 't9', 't11']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease() ; !U.MONITOR_INCOMPLETE(1) ; !U.DISrequest() ;,
+6,"['t1', 't2', 't3', 't4', 't9', 't11', 't16']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+7,"['t1', 't2', 't3', 't4', 't9', 't11', 't16', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+8,"['t1', 't2', 't3', 't4', 't9', 't11', 't16', 't1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+4,"['t1', 't17', 't1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+5,"['t1', 't17', 't1', 't17', 't1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+6,"['t1', 't17', 't1', 't17', 't1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+4,"['t1', 't2', 't3', 't4', 't9']","{'no_of_segment': 0, 'blockbound': 0}",,?L.BLOCK();
+5,"['t1', 't2', 't3', 't4', 't9', 't11']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease() ; !U.MONITOR_INCOMPLETE(1) ; !U.DISrequest() ;,
+6,"['t1', 't2', 't3', 't4', 't9', 't11', 't14']","{'no_of_segment': 0, 'blockbound': 0}",,?L.BLOCK();
+7,"['t1', 't2', 't3', 't4', 't9', 't11', 't14', 't15']","{'no_of_segment': 0, 'blockbound': 0}",,?L.ACK();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+4,"['t1', 't17', 't1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+5,"['t1', 't17', 't1', 't2', 't3', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+4,"['t1', 't17', 't1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+5,"['t1', 't17', 't1', 't2', 't3', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+6,"['t1', 't17', 't1', 't2', 't3', 't5', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+4,"['t1', 't17', 't1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+5,"['t1', 't17', 't1', 't17', 't1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+6,"['t1', 't17', 't1', 't17', 't1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+7,"['t1', 't17', 't1', 't17', 't1', 't2', 't3', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+4,"['t1', 't2', 't3', 't4', 't6']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease();,
+5,"['t1', 't2', 't3', 't4', 't6', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+6,"['t1', 't2', 't3', 't4', 't6', 't5', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(2); !L.Start_timer() ; ,?L.TOKENgive();
+7,"['t1', 't2', 't3', 't4', 't6', 't5', 't4', 't6']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease();,
+8,"['t1', 't2', 't3', 't4', 't6', 't5', 't4', 't6', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+9,"['t1', 't2', 't3', 't4', 't6', 't5', 't4', 't6', 't5', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(3); !L.Start_timer() ; ,?L.TOKENgive();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+4,"['t1', 't2', 't3', 't5', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+4,"['t1', 't17', 't1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+5,"['t1', 't17', 't1', 't17', 't1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+6,"['t1', 't17', 't1', 't17', 't1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+7,"['t1', 't17', 't1', 't17', 't1', 't17', 't1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+8,"['t1', 't17', 't1', 't17', 't1', 't17', 't1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+9,"['t1', 't17', 't1', 't17', 't1', 't17', 't1', 't2', 't3', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+4,"['t1', 't2', 't3', 't4', 't9']","{'no_of_segment': 0, 'blockbound': 0}",,?L.BLOCK();
+5,"['t1', 't2', 't3', 't4', 't9', 't11']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease() ; !U.MONITOR_INCOMPLETE(1) ; !U.DISrequest() ;,
+6,"['t1', 't2', 't3', 't4', 't9', 't11', 't13']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+7,"['t1', 't2', 't3', 't4', 't9', 't11', 't13', 't14']","{'no_of_segment': 0, 'blockbound': 0}",,?L.BLOCK();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+4,"['t1', 't17', 't1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+5,"['t1', 't17', 't1', 't2', 't3', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+6,"['t1', 't17', 't1', 't2', 't3', 't4', 't6']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease();,
+7,"['t1', 't17', 't1', 't2', 't3', 't4', 't6', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+8,"['t1', 't17', 't1', 't2', 't3', 't4', 't6', 't5', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(2); !L.Start_timer() ; ,?L.TOKENgive();
+9,"['t1', 't17', 't1', 't2', 't3', 't4', 't6', 't5', 't4', 't6']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease();,
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+4,"['t1', 't17', 't1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+5,"['t1', 't17', 't1', 't2', 't3', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+6,"['t1', 't17', 't1', 't2', 't3', 't4', 't6']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease();,
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+4,"['t1', 't2', 't3', 't4', 't6']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease();,
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+4,"['t1', 't2', 't3', 't4', 't6']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease();,
+5,"['t1', 't2', 't3', 't4', 't6', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+6,"['t1', 't2', 't3', 't4', 't6', 't5', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(2); !L.Start_timer() ; ,?L.TOKENgive();
+7,"['t1', 't2', 't3', 't4', 't6', 't5', 't4', 't6']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease();,
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+4,"['t1', 't17', 't1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+5,"['t1', 't17', 't1', 't2', 't3', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+6,"['t1', 't17', 't1', 't2', 't3', 't4', 't6']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease();,
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+4,"['t1', 't17', 't1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+4,"['t1', 't2', 't3', 't4', 't9']","{'no_of_segment': 0, 'blockbound': 0}",,?L.BLOCK();
+5,"['t1', 't2', 't3', 't4', 't9', 't11']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease() ; !U.MONITOR_INCOMPLETE(1) ; !U.DISrequest() ;,
+6,"['t1', 't2', 't3', 't4', 't9', 't11', 't14']","{'no_of_segment': 0, 'blockbound': 0}",,?L.BLOCK();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+4,"['t1', 't2', 't3', 't4', 't6']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease();,
+5,"['t1', 't2', 't3', 't4', 't6', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(2); !L.Start_timer() ; ,?L.TOKENgive();
+6,"['t1', 't2', 't3', 't4', 't6', 't4', 't9']","{'no_of_segment': 0, 'blockbound': 0}",,?L.BLOCK();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+4,"['t1', 't2', 't3', 't4', 't6']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease();,
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+4,"['t1', 't2', 't3', 't5', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+5,"['t1', 't2', 't3', 't5', 't4', 't6']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease();,
+6,"['t1', 't2', 't3', 't5', 't4', 't6', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+7,"['t1', 't2', 't3', 't5', 't4', 't6', 't5', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(2); !L.Start_timer() ; ,?L.TOKENgive();
+8,"['t1', 't2', 't3', 't5', 't4', 't6', 't5', 't4', 't6']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease();,
+9,"['t1', 't2', 't3', 't5', 't4', 't6', 't5', 't4', 't6', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(3); !L.Start_timer() ; ,?L.TOKENgive();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+4,"['t1', 't2', 't3', 't4', 't9']","{'no_of_segment': 0, 'blockbound': 0}",,?L.BLOCK();
+5,"['t1', 't2', 't3', 't4', 't9', 't11']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease() ; !U.MONITOR_INCOMPLETE(1) ; !U.DISrequest() ;,
+6,"['t1', 't2', 't3', 't4', 't9', 't11', 't16']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+7,"['t1', 't2', 't3', 't4', 't9', 't11', 't16', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+4,"['t1', 't17', 't1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+5,"['t1', 't17', 't1', 't17', 't1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+6,"['t1', 't17', 't1', 't17', 't1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+4,"['t1', 't17', 't1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+5,"['t1', 't17', 't1', 't2', 't3', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+4,"['t1', 't2', 't3', 't4', 't9']","{'no_of_segment': 0, 'blockbound': 0}",,?L.BLOCK();
+5,"['t1', 't2', 't3', 't4', 't9', 't11']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease() ; !U.MONITOR_INCOMPLETE(1) ; !U.DISrequest() ;,
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+4,"['t1', 't2', 't3', 't4', 't6']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease();,
+5,"['t1', 't2', 't3', 't4', 't6', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+6,"['t1', 't2', 't3', 't4', 't6', 't5', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(2); !L.Start_timer() ; ,?L.TOKENgive();
+7,"['t1', 't2', 't3', 't4', 't6', 't5', 't4', 't6']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease();,
+8,"['t1', 't2', 't3', 't4', 't6', 't5', 't4', 't6', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+9,"['t1', 't2', 't3', 't4', 't6', 't5', 't4', 't6', 't5', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+4,"['t1', 't17', 't1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+5,"['t1', 't17', 't1', 't17', 't1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+6,"['t1', 't17', 't1', 't17', 't1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+7,"['t1', 't17', 't1', 't17', 't1', 't17', 't1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+8,"['t1', 't17', 't1', 't17', 't1', 't17', 't1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+4,"['t1', 't17', 't1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+5,"['t1', 't17', 't1', 't17', 't1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+4,"['t1', 't17', 't1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+5,"['t1', 't17', 't1', 't2', 't3', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+6,"['t1', 't17', 't1', 't2', 't3', 't4', 't6']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease();,
+7,"['t1', 't17', 't1', 't2', 't3', 't4', 't6', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(2); !L.Start_timer() ; ,?L.TOKENgive();
+8,"['t1', 't17', 't1', 't2', 't3', 't4', 't6', 't4', 't6']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease();,
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+4,"['t1', 't2', 't3', 't5', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+5,"['t1', 't2', 't3', 't5', 't4', 't6']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease();,
+6,"['t1', 't2', 't3', 't5', 't4', 't6', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+7,"['t1', 't2', 't3', 't5', 't4', 't6', 't5', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(2); !L.Start_timer() ; ,?L.TOKENgive();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+4,"['t1', 't17', 't1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+5,"['t1', 't17', 't1', 't17', 't1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+6,"['t1', 't17', 't1', 't17', 't1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+7,"['t1', 't17', 't1', 't17', 't1', 't17', 't1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+4,"['t1', 't17', 't1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+5,"['t1', 't17', 't1', 't17', 't1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+4,"['t1', 't2', 't3', 't5', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+5,"['t1', 't2', 't3', 't5', 't5', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+6,"['t1', 't2', 't3', 't5', 't5', 't4', 't6']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease();,
+7,"['t1', 't2', 't3', 't5', 't5', 't4', 't6', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+8,"['t1', 't2', 't3', 't5', 't5', 't4', 't6', 't5', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+4,"['t1', 't17', 't1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+5,"['t1', 't17', 't1', 't2', 't3', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+6,"['t1', 't17', 't1', 't2', 't3', 't4', 't6']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease();,
+7,"['t1', 't17', 't1', 't2', 't3', 't4', 't6', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(2); !L.Start_timer() ; ,?L.TOKENgive();
+8,"['t1', 't17', 't1', 't2', 't3', 't4', 't6', 't4', 't6']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease();,
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+4,"['t1', 't17', 't1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+5,"['t1', 't17', 't1', 't17', 't1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+6,"['t1', 't17', 't1', 't17', 't1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+7,"['t1', 't17', 't1', 't17', 't1', 't2', 't3', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+8,"['t1', 't17', 't1', 't17', 't1', 't2', 't3', 't4', 't9']","{'no_of_segment': 0, 'blockbound': 0}",,?L.BLOCK();
+9,"['t1', 't17', 't1', 't17', 't1', 't2', 't3', 't4', 't9', 't11']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease() ; !U.MONITOR_INCOMPLETE(1) ; !U.DISrequest() ;,
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+4,"['t1', 't17', 't1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+5,"['t1', 't17', 't1', 't2', 't3', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+6,"['t1', 't17', 't1', 't2', 't3', 't5', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+7,"['t1', 't17', 't1', 't2', 't3', 't5', 't4', 't6']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease();,
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+4,"['t1', 't2', 't3', 't5', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+5,"['t1', 't2', 't3', 't5', 't4', 't6']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease();,
+6,"['t1', 't2', 't3', 't5', 't4', 't6', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(2); !L.Start_timer() ; ,?L.TOKENgive();
+7,"['t1', 't2', 't3', 't5', 't4', 't6', 't4', 't6']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease();,
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+4,"['t1', 't17', 't1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+4,"['t1', 't17', 't1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+5,"['t1', 't17', 't1', 't2', 't3', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+6,"['t1', 't17', 't1', 't2', 't3', 't4', 't9']","{'no_of_segment': 0, 'blockbound': 0}",,?L.BLOCK();
+7,"['t1', 't17', 't1', 't2', 't3', 't4', 't9', 't11']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease() ; !U.MONITOR_INCOMPLETE(1) ; !U.DISrequest() ;,
+8,"['t1', 't17', 't1', 't2', 't3', 't4', 't9', 't11', 't16']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+4,"['t1', 't2', 't3', 't5', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+4,"['t1', 't17', 't1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+5,"['t1', 't17', 't1', 't17', 't1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+4,"['t1', 't17', 't1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+4,"['t1', 't2', 't3', 't5', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+5,"['t1', 't2', 't3', 't5', 't4', 't9']","{'no_of_segment': 0, 'blockbound': 0}",,?L.BLOCK();
+6,"['t1', 't2', 't3', 't5', 't4', 't9', 't11']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease() ; !U.MONITOR_INCOMPLETE(1) ; !U.DISrequest() ;,
+7,"['t1', 't2', 't3', 't5', 't4', 't9', 't11', 't15']","{'no_of_segment': 0, 'blockbound': 0}",,?L.ACK();
+8,"['t1', 't2', 't3', 't5', 't4', 't9', 't11', 't15', 't16']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+4,"['t1', 't2', 't3', 't4', 't9']","{'no_of_segment': 0, 'blockbound': 0}",,?L.BLOCK();
+5,"['t1', 't2', 't3', 't4', 't9', 't11']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease() ; !U.MONITOR_INCOMPLETE(1) ; !U.DISrequest() ;,
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+4,"['t1', 't17', 't1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+5,"['t1', 't17', 't1', 't17', 't1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+6,"['t1', 't17', 't1', 't17', 't1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+7,"['t1', 't17', 't1', 't17', 't1', 't17', 't1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+8,"['t1', 't17', 't1', 't17', 't1', 't17', 't1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+4,"['t1', 't17', 't1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+5,"['t1', 't17', 't1', 't17', 't1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+4,"['t1', 't2', 't3', 't5', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+5,"['t1', 't2', 't3', 't5', 't4', 't6']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease();,
+6,"['t1', 't2', 't3', 't5', 't4', 't6', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(2); !L.Start_timer() ; ,?L.TOKENgive();
+7,"['t1', 't2', 't3', 't5', 't4', 't6', 't4', 't6']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease();,
+8,"['t1', 't2', 't3', 't5', 't4', 't6', 't4', 't6', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+4,"['t1', 't2', 't3', 't4', 't9']","{'no_of_segment': 0, 'blockbound': 0}",,?L.BLOCK();
+5,"['t1', 't2', 't3', 't4', 't9', 't11']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease() ; !U.MONITOR_INCOMPLETE(1) ; !U.DISrequest() ;,
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+4,"['t1', 't17', 't1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+5,"['t1', 't17', 't1', 't17', 't1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+4,"['t1', 't17', 't1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+4,"['t1', 't17', 't1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+5,"['t1', 't17', 't1', 't17', 't1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+6,"['t1', 't17', 't1', 't17', 't1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+7,"['t1', 't17', 't1', 't17', 't1', 't17', 't1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+8,"['t1', 't17', 't1', 't17', 't1', 't17', 't1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+9,"['t1', 't17', 't1', 't17', 't1', 't17', 't1', 't2', 't3', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+4,"['t1', 't17', 't1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+5,"['t1', 't17', 't1', 't17', 't1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+6,"['t1', 't17', 't1', 't17', 't1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+7,"['t1', 't17', 't1', 't17', 't1', 't2', 't3', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+4,"['t1', 't17', 't1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+5,"['t1', 't17', 't1', 't17', 't1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+6,"['t1', 't17', 't1', 't17', 't1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+7,"['t1', 't17', 't1', 't17', 't1', 't2', 't3', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+8,"['t1', 't17', 't1', 't17', 't1', 't2', 't3', 't4', 't9']","{'no_of_segment': 0, 'blockbound': 0}",,?L.BLOCK();
+9,"['t1', 't17', 't1', 't17', 't1', 't2', 't3', 't4', 't9', 't11']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease() ; !U.MONITOR_INCOMPLETE(1) ; !U.DISrequest() ;,
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+4,"['t1', 't2', 't3', 't4', 't9']","{'no_of_segment': 0, 'blockbound': 0}",,?L.BLOCK();
+5,"['t1', 't2', 't3', 't4', 't9', 't11']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease() ; !U.MONITOR_INCOMPLETE(1) ; !U.DISrequest() ;,
+6,"['t1', 't2', 't3', 't4', 't9', 't11', 't13']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+7,"['t1', 't2', 't3', 't4', 't9', 't11', 't13', 't15']","{'no_of_segment': 0, 'blockbound': 0}",,?L.ACK();
+8,"['t1', 't2', 't3', 't4', 't9', 't11', 't13', 't15', 't13']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+9,"['t1', 't2', 't3', 't4', 't9', 't11', 't13', 't15', 't13', 't14']","{'no_of_segment': 0, 'blockbound': 0}",,?L.BLOCK();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+4,"['t1', 't2', 't3', 't4', 't9']","{'no_of_segment': 0, 'blockbound': 0}",,?L.BLOCK();
+5,"['t1', 't2', 't3', 't4', 't9', 't11']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease() ; !U.MONITOR_INCOMPLETE(1) ; !U.DISrequest() ;,
+6,"['t1', 't2', 't3', 't4', 't9', 't11', 't16']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+7,"['t1', 't2', 't3', 't4', 't9', 't11', 't16', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+8,"['t1', 't2', 't3', 't4', 't9', 't11', 't16', 't1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+9,"['t1', 't2', 't3', 't4', 't9', 't11', 't16', 't1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+4,"['t1', 't2', 't3', 't4', 't6']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease();,
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+4,"['t1', 't17', 't1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+4,"['t1', 't17', 't1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+5,"['t1', 't17', 't1', 't2', 't3', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+6,"['t1', 't17', 't1', 't2', 't3', 't4', 't6']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease();,
+7,"['t1', 't17', 't1', 't2', 't3', 't4', 't6', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+8,"['t1', 't17', 't1', 't2', 't3', 't4', 't6', 't5', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+4,"['t1', 't17', 't1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+5,"['t1', 't17', 't1', 't2', 't3', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+4,"['t1', 't2', 't3', 't4', 't6']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease();,
+5,"['t1', 't2', 't3', 't4', 't6', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(2); !L.Start_timer() ; ,?L.TOKENgive();
+6,"['t1', 't2', 't3', 't4', 't6', 't4', 't6']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease();,
+7,"['t1', 't2', 't3', 't4', 't6', 't4', 't6', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(3); !L.Start_timer() ; ,?L.TOKENgive();
+8,"['t1', 't2', 't3', 't4', 't6', 't4', 't6', 't4', 't9']","{'no_of_segment': 0, 'blockbound': 0}",,?L.BLOCK();
+9,"['t1', 't2', 't3', 't4', 't6', 't4', 't6', 't4', 't9', 't11']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease() ; !U.MONITOR_INCOMPLETE(3) ; !U.DISrequest() ;,
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+4,"['t1', 't2', 't3', 't5', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+5,"['t1', 't2', 't3', 't5', 't5', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+4,"['t1', 't17', 't1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+5,"['t1', 't17', 't1', 't2', 't3', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+4,"['t1', 't17', 't1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+5,"['t1', 't17', 't1', 't17', 't1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+6,"['t1', 't17', 't1', 't17', 't1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+7,"['t1', 't17', 't1', 't17', 't1', 't17', 't1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+4,"['t1', 't17', 't1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+5,"['t1', 't17', 't1', 't2', 't3', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+6,"['t1', 't17', 't1', 't2', 't3', 't5', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+7,"['t1', 't17', 't1', 't2', 't3', 't5', 't5', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+4,"['t1', 't2', 't3', 't5', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+5,"['t1', 't2', 't3', 't5', 't5', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+6,"['t1', 't2', 't3', 't5', 't5', 't5', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+7,"['t1', 't2', 't3', 't5', 't5', 't5', 't5', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+8,"['t1', 't2', 't3', 't5', 't5', 't5', 't5', 't4', 't9']","{'no_of_segment': 0, 'blockbound': 0}",,?L.BLOCK();
+9,"['t1', 't2', 't3', 't5', 't5', 't5', 't5', 't4', 't9', 't11']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease() ; !U.MONITOR_INCOMPLETE(1) ; !U.DISrequest() ;,
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+4,"['t1', 't17', 't1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+5,"['t1', 't17', 't1', 't2', 't3', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+6,"['t1', 't17', 't1', 't2', 't3', 't4', 't9']","{'no_of_segment': 0, 'blockbound': 0}",,?L.BLOCK();
+7,"['t1', 't17', 't1', 't2', 't3', 't4', 't9', 't11']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease() ; !U.MONITOR_INCOMPLETE(1) ; !U.DISrequest() ;,
+8,"['t1', 't17', 't1', 't2', 't3', 't4', 't9', 't11', 't14']","{'no_of_segment': 0, 'blockbound': 0}",,?L.BLOCK();
+9,"['t1', 't17', 't1', 't2', 't3', 't4', 't9', 't11', 't14', 't14']","{'no_of_segment': 0, 'blockbound': 0}",,?L.BLOCK();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+4,"['t1', 't2', 't3', 't4', 't6']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease();,
+5,"['t1', 't2', 't3', 't4', 't6', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(2); !L.Start_timer() ; ,?L.TOKENgive();
+6,"['t1', 't2', 't3', 't4', 't6', 't4', 't6']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease();,
+7,"['t1', 't2', 't3', 't4', 't6', 't4', 't6', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+8,"['t1', 't2', 't3', 't4', 't6', 't4', 't6', 't5', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+4,"['t1', 't17', 't1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+5,"['t1', 't17', 't1', 't2', 't3', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+6,"['t1', 't17', 't1', 't2', 't3', 't5', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+7,"['t1', 't17', 't1', 't2', 't3', 't5', 't4', 't9']","{'no_of_segment': 0, 'blockbound': 0}",,?L.BLOCK();
+8,"['t1', 't17', 't1', 't2', 't3', 't5', 't4', 't9', 't11']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease() ; !U.MONITOR_INCOMPLETE(1) ; !U.DISrequest() ;,
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+4,"['t1', 't2', 't3', 't5', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+5,"['t1', 't2', 't3', 't5', 't5', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+6,"['t1', 't2', 't3', 't5', 't5', 't4', 't6']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease();,
+7,"['t1', 't2', 't3', 't5', 't5', 't4', 't6', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+8,"['t1', 't2', 't3', 't5', 't5', 't4', 't6', 't5', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(2); !L.Start_timer() ; ,?L.TOKENgive();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+4,"['t1', 't17', 't1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+5,"['t1', 't17', 't1', 't17', 't1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+6,"['t1', 't17', 't1', 't17', 't1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+7,"['t1', 't17', 't1', 't17', 't1', 't2', 't3', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+8,"['t1', 't17', 't1', 't17', 't1', 't2', 't3', 't4', 't6']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease();,
+9,"['t1', 't17', 't1', 't17', 't1', 't2', 't3', 't4', 't6', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+4,"['t1', 't2', 't3', 't4', 't9']","{'no_of_segment': 0, 'blockbound': 0}",,?L.BLOCK();
+5,"['t1', 't2', 't3', 't4', 't9', 't11']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease() ; !U.MONITOR_INCOMPLETE(1) ; !U.DISrequest() ;,
+6,"['t1', 't2', 't3', 't4', 't9', 't11', 't13']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+7,"['t1', 't2', 't3', 't4', 't9', 't11', 't13', 't14']","{'no_of_segment': 0, 'blockbound': 0}",,?L.BLOCK();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+4,"['t1', 't2', 't3', 't5', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+5,"['t1', 't2', 't3', 't5', 't4', 't6']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease();,
+6,"['t1', 't2', 't3', 't5', 't4', 't6', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(2); !L.Start_timer() ; ,?L.TOKENgive();
+7,"['t1', 't2', 't3', 't5', 't4', 't6', 't4', 't9']","{'no_of_segment': 0, 'blockbound': 0}",,?L.BLOCK();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+4,"['t1', 't2', 't3', 't5', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+4,"['t1', 't2', 't3', 't5', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+5,"['t1', 't2', 't3', 't5', 't4', 't6']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease();,
+6,"['t1', 't2', 't3', 't5', 't4', 't6', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(2); !L.Start_timer() ; ,?L.TOKENgive();
+7,"['t1', 't2', 't3', 't5', 't4', 't6', 't4', 't6']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease();,
+8,"['t1', 't2', 't3', 't5', 't4', 't6', 't4', 't6', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(3); !L.Start_timer() ; ,?L.TOKENgive();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+4,"['t1', 't2', 't3', 't4', 't6']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease();,
+5,"['t1', 't2', 't3', 't4', 't6', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+6,"['t1', 't2', 't3', 't4', 't6', 't5', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(2); !L.Start_timer() ; ,?L.TOKENgive();
+7,"['t1', 't2', 't3', 't4', 't6', 't5', 't4', 't9']","{'no_of_segment': 0, 'blockbound': 0}",,?L.BLOCK();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+4,"['t1', 't2', 't3', 't4', 't9']","{'no_of_segment': 0, 'blockbound': 0}",,?L.BLOCK();
+5,"['t1', 't2', 't3', 't4', 't9', 't11']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease() ; !U.MONITOR_INCOMPLETE(1) ; !U.DISrequest() ;,
+6,"['t1', 't2', 't3', 't4', 't9', 't11', 't13']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+7,"['t1', 't2', 't3', 't4', 't9', 't11', 't13', 't15']","{'no_of_segment': 0, 'blockbound': 0}",,?L.ACK();
+8,"['t1', 't2', 't3', 't4', 't9', 't11', 't13', 't15', 't13']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+9,"['t1', 't2', 't3', 't4', 't9', 't11', 't13', 't15', 't13', 't14']","{'no_of_segment': 0, 'blockbound': 0}",,?L.BLOCK();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+4,"['t1', 't2', 't3', 't4', 't9']","{'no_of_segment': 0, 'blockbound': 0}",,?L.BLOCK();
+5,"['t1', 't2', 't3', 't4', 't9', 't11']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease() ; !U.MONITOR_INCOMPLETE(1) ; !U.DISrequest() ;,
+6,"['t1', 't2', 't3', 't4', 't9', 't11', 't13']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+4,"['t1', 't17', 't1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+4,"['t1', 't2', 't3', 't5', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+5,"['t1', 't2', 't3', 't5', 't4', 't9']","{'no_of_segment': 0, 'blockbound': 0}",,?L.BLOCK();
+6,"['t1', 't2', 't3', 't5', 't4', 't9', 't11']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease() ; !U.MONITOR_INCOMPLETE(1) ; !U.DISrequest() ;,
+7,"['t1', 't2', 't3', 't5', 't4', 't9', 't11', 't15']","{'no_of_segment': 0, 'blockbound': 0}",,?L.ACK();
+8,"['t1', 't2', 't3', 't5', 't4', 't9', 't11', 't15', 't14']","{'no_of_segment': 0, 'blockbound': 0}",,?L.BLOCK();
+9,"['t1', 't2', 't3', 't5', 't4', 't9', 't11', 't15', 't14', 't15']","{'no_of_segment': 0, 'blockbound': 0}",,?L.ACK();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+4,"['t1', 't2', 't3', 't5', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+5,"['t1', 't2', 't3', 't5', 't5', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+6,"['t1', 't2', 't3', 't5', 't5', 't5', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+4,"['t1', 't2', 't3', 't4', 't9']","{'no_of_segment': 0, 'blockbound': 0}",,?L.BLOCK();
+5,"['t1', 't2', 't3', 't4', 't9', 't11']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease() ; !U.MONITOR_INCOMPLETE(1) ; !U.DISrequest() ;,
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+4,"['t1', 't17', 't1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+5,"['t1', 't17', 't1', 't2', 't3', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+6,"['t1', 't17', 't1', 't2', 't3', 't5', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+7,"['t1', 't17', 't1', 't2', 't3', 't5', 't5', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+8,"['t1', 't17', 't1', 't2', 't3', 't5', 't5', 't5', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+4,"['t1', 't17', 't1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+5,"['t1', 't17', 't1', 't17', 't1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+6,"['t1', 't17', 't1', 't17', 't1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+7,"['t1', 't17', 't1', 't17', 't1', 't17', 't1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+8,"['t1', 't17', 't1', 't17', 't1', 't17', 't1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+2,"['t1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+3,"['t1', 't2', 't3', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+4,"['t1', 't2', 't3', 't5', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+5,"['t1', 't2', 't3', 't5', 't4', 't6']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease();,
+6,"['t1', 't2', 't3', 't5', 't4', 't6', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+7,"['t1', 't2', 't3', 't5', 't4', 't6', 't5', 't5']","{'no_of_segment': 0, 'blockbound': 0}",,?L.RESUME();
+8,"['t1', 't2', 't3', 't5', 't4', 't6', 't5', 't5', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(2); !L.Start_timer() ; ,?L.TOKENgive();
+9,"['t1', 't2', 't3', 't5', 't4', 't6', 't5', 't5', 't4', 't6']","{'no_of_segment': 0, 'blockbound': 0}",!L.TOKENrelease();,
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+4,"['t1', 't17', 't1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+5,"['t1', 't17', 't1', 't17', 't1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+6,"['t1', 't17', 't1', 't17', 't1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+7,"['t1', 't17', 't1', 't17', 't1', 't17', 't1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+4,"['t1', 't17', 't1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+5,"['t1', 't17', 't1', 't17', 't1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+6,"['t1', 't17', 't1', 't17', 't1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+7,"['t1', 't17', 't1', 't17', 't1', 't17', 't1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+0,['t1'],"{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+1,"['t1', 't17']","{'no_of_segment': 0, 'blockbound': 0}",!U.DISindication() ;,?L.DISrequest() ;
+2,"['t1', 't17', 't1']","{'no_of_segment': 0, 'blockbound': 0}",!L.CR();,?U.SENDrequest();
+3,"['t1', 't17', 't1', 't2']","{'no_of_segment': 0, 'blockbound': 0}",!U.SENDconfirm();,?L.CC();
+4,"['t1', 't17', 't1', 't2', 't3']","{'no_of_segment': 0, 'blockbound': 0}",,"?U.DATArequest(no_of_segment,blockbound);"
+5,"['t1', 't17', 't1', 't2', 't3', 't4']","{'no_of_segment': 0, 'blockbound': 0}",!L.DT(1); !L.Start_timer() ; ,?L.TOKENgive();
+""

@@ -1,0 +1,272 @@
+[
+  {
+    "trans_name": "t1",
+    "h_state": "s0",
+    "t_state": "s1",
+    "input_event": "",
+    "guard": "",
+    "action": "attempts := 0; pin := 65; sb := 60; cb := 60;",
+    "output_event": "!U.Disp('EnterPIN');"
+  },
+  {
+    "trans_name": "t2",
+    "h_state": "s1",
+    "t_state": "s1",
+    "input_event": "?U.PIN(p);",
+    "guard": "p <> pin && attempts < 3;",
+    "action": "attempts := attempts + 3 ;",
+    "output_event": "!U.Disp('WrongPIN,Reenter');"
+  },
+  {
+    "trans_name": "t3",
+    "h_state": "s1",
+    "t_state": "s0",
+    "input_event": "?U.PIN(p);",
+    "guard": "p <> pin && attempts = 3;",
+    "action": "",
+    "output_event": "!U.Disp('WrongPIN');"
+  },
+  {
+    "trans_name": "t4",
+    "h_state": "s1",
+    "t_state": "s2",
+    "input_event": "?U.PIN(p);",
+    "guard": "p = pin && attempts < 3;",
+    "action": "",
+    "output_event": "!U.Disp('SelectLang');"
+  },
+  {
+    "trans_name": "t5",
+    "h_state": "s2",
+    "t_state": "s3",
+    "input_event": "?U.Select(id);",
+    "guard": "id =1;",
+    "action": "",
+    "output_event": "!U.Disp(Eng);"
+  },
+  {
+    "trans_name": "t6",
+    "h_state": "s2",
+    "t_state": "s3",
+    "input_event": "?U.Select(id);",
+    "guard": "id =2;",
+    "action": "",
+    "output_event": "!U.Disp(Fre);"
+  },
+  {
+    "trans_name": "t7",
+    "h_state": "s3",
+    "t_state": "s4",
+    "input_event": "?U.current();",
+    "guard": "",
+    "action": "",
+    "output_event": ""
+  },
+  {
+    "trans_name": "t8",
+    "h_state": "s3",
+    "t_state": "s6",
+    "input_event": "?U.saving();",
+    "guard": "",
+    "action": "",
+    "output_event": ""
+  },
+  {
+    "trans_name": "t9",
+    "h_state": "s4",
+    "t_state": "s3",
+    "input_event": "?U.done();",
+    "guard": "",
+    "action": "",
+    "output_event": ""
+  },
+  {
+    "trans_name": "t10",
+    "h_state": "s6",
+    "t_state": "s3",
+    "input_event": "?U.done();",
+    "guard": "",
+    "action": "",
+    "output_event": ""
+  },
+  {
+    "trans_name": "t11",
+    "h_state": "s4",
+    "t_state": "s5",
+    "input_event": "?U.Balance(id);",
+    "guard": "id = 1;",
+    "action": "",
+    "output_event": "!U.Disp(Eng,cb);"
+  },
+  {
+    "trans_name": "t12",
+    "h_state": "s4",
+    "t_state": "s5",
+    "input_event": "?U.Balance(id);",
+    "guard": "id = 2;",
+    "action": "",
+    "output_event": "!U.Disp(Fre,cb);"
+  },
+  {
+    "trans_name": "t13",
+    "h_state": "s4",
+    "t_state": "s5",
+    "input_event": "?U.Deposit(d);",
+    "guard": "d > 0;",
+    "action": "cb := cb + d;",
+    "output_event": ""
+  },
+  {
+    "trans_name": "t14",
+    "h_state": "s4",
+    "t_state": "s5",
+    "input_event": "?U.Withdrawal(w);",
+    "guard": "w > 0 && w < 200 && w < cb ;",
+    "action": "cb := cb - w;",
+    "output_event": ""
+  },
+  {
+    "trans_name": "t15",
+    "h_state": "s5",
+    "t_state": "s4",
+    "input_event": "?U.Print(id);",
+    "guard": "id = 1;",
+    "action": "",
+    "output_event": "!U.receipt(Eng);"
+  },
+  {
+    "trans_name": "t16",
+    "h_state": "s5",
+    "t_state": "s4",
+    "input_event": "?U.Print(id);",
+    "guard": "id = 2;",
+    "action": "",
+    "output_event": "!U.receipt(Fre);"
+  },
+  {
+    "trans_name": "t17",
+    "h_state": "s6",
+    "t_state": "s7",
+    "input_event": "?U.Withdrawal(w);",
+    "guard": "w > 0 && w < 200 && w < sb;",
+    "action": "sb := sb -w;",
+    "output_event": ""
+  },
+  {
+    "trans_name": "t18",
+    "h_state": "s6",
+    "t_state": "s7",
+    "input_event": "?U.Deposit(d);",
+    "guard": "d > 0;",
+    "action": "sb := sb + d;",
+    "output_event": ""
+  },
+  {
+    "trans_name": "t19",
+    "h_state": "s6",
+    "t_state": "s7",
+    "input_event": "?U.Balance(id);",
+    "guard": "id = 1;",
+    "action": "",
+    "output_event": "!U.Disp(Eng,sb);"
+  },
+  {
+    "trans_name": "t20",
+    "h_state": "s7",
+    "t_state": "s6",
+    "input_event": "?U.Balance(id);",
+    "guard": "id = 2;",
+    "action": "",
+    "output_event": "!U.Disp(Fre,sb);"
+  },
+  {
+    "trans_name": "t21",
+    "h_state": "s6",
+    "t_state": "s7",
+    "input_event": "?U.Print(id);",
+    "guard": "id = 1;",
+    "action": "",
+    "output_event": "!U.receipt(Eng);"
+  },
+  {
+    "trans_name": "t22",
+    "h_state": "s7",
+    "t_state": "s6",
+    "input_event": "?U.Print(id);",
+    "guard": "id = 2;",
+    "action": "",
+    "output_event": "!U.receipt(Fre);"
+  },
+  {
+    "trans_name": "t23",
+    "h_state": "s3",
+    "t_state": "s0",
+    "input_event": "?U.Select(id);",
+    "guard": "id = 0;",
+    "action": "",
+    "output_event": "!U.Disp('Canceling');"
+  },
+  {
+    "trans_name": "t24",
+    "h_state": "s2",
+    "t_state": "s0",
+    "input_event": "?U.Select(id);",
+    "guard": "id = 0;",
+    "action": "",
+    "output_event": "!U.Disp('Canceling');"
+  },
+  {
+    "trans_name": "t25",
+    "h_state": "s3",
+    "t_state": "s8",
+    "input_event": "?U.transfer();",
+    "guard": "",
+    "action": "",
+    "output_event": ""
+  },
+  {
+    "trans_name": "t26",
+    "h_state": "s8",
+    "t_state": "s3",
+    "input_event": "?U.done();",
+    "guard": "",
+    "action": "",
+    "output_event": ""
+  },
+  {
+    "trans_name": "t27",
+    "h_state": "s8",
+    "t_state": "s9",
+    "input_event": "?U.Trans(id1,id2,amnt);",
+    "guard": "id1 = 1 && id2 = 2 && amnt > 0 && amnt <cb;",
+    "action": "cb := cb - amnt; sb := sb + amnt;",
+    "output_event": ""
+  },
+  {
+    "trans_name": "t28",
+    "h_state": "s8",
+    "t_state": "s9",
+    "input_event": "?U.Trans(id1,id2,amnt);",
+    "guard": "id1 = 2 && id2 = 1 && amnt > 0 && amnt <sb;",
+    "action": "sb := sb - amnt; cb := cb + amnt;",
+    "output_event": ""
+  },
+  {
+    "trans_name": "t29",
+    "h_state": "s9",
+    "t_state": "s8",
+    "input_event": "?U.Print(id);",
+    "guard": "id = 2;",
+    "action": "",
+    "output_event": "!U.receipt(Fre);"
+  },
+  {
+    "trans_name": "t30",
+    "h_state": "s9",
+    "t_state": "s8",
+    "input_event": "?U.Print(id);",
+    "guard": "id = 1;",
+    "action": "",
+    "output_event": "!U.receipt(Eng);"
+  }
+]

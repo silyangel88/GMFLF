@@ -1,0 +1,731 @@
+[
+  {
+    "trans_name": "t1",
+    "h_state": "id2",
+    "t_state": "id9",
+    "input_event": "?U.input(qos);",
+    "guard": "",
+    "action": "uid := 1; ID1 := 1; ID2 := 0; pwd := 1; PW1 := 1; out := 1;",
+    "output_event": ""
+  },
+  {
+    "trans_name": "t2",
+    "h_state": "id17",
+    "t_state": "id16",
+    "input_event": "?U.input(qos);",
+    "guard": "uid <> ID1;",
+    "action": "pwd := 1; PW1 := 1; out := 1;",
+    "output_event": ""
+  },
+  {
+    "trans_name": "t3",
+    "h_state": "id27",
+    "t_state": "id26",
+    "input_event": "?U.input(qos);",
+    "guard": "uid <> ID1;",
+    "action": "out := 1;",
+    "output_event": ""
+  },
+  {
+    "trans_name": "t4",
+    "h_state": "id8",
+    "t_state": "id29",
+    "input_event": "",
+    "guard": "",
+    "action": "qos := qos - 1; out := 1;",
+    "output_event": "!U.output(qos);"
+  },
+  {
+    "trans_name": "t5",
+    "h_state": "id17",
+    "t_state": "id16",
+    "input_event": "?U.input(qos);",
+    "guard": "uid <> ID1;",
+    "action": "out := 1;",
+    "output_event": ""
+  },
+  {
+    "trans_name": "t6",
+    "h_state": "id27",
+    "t_state": "id26",
+    "input_event": "",
+    "guard": "uid <> ID1;",
+    "action": "",
+    "output_event": ""
+  },
+  {
+    "trans_name": "t7",
+    "h_state": "id0",
+    "t_state": "id9",
+    "input_event": "",
+    "guard": "",
+    "action": "PW1 := out; out := 0;",
+    "output_event": "!U.output(out);"
+  },
+  {
+    "trans_name": "t8",
+    "h_state": "id9",
+    "t_state": "id0",
+    "input_event": "?U.input(qos);",
+    "guard": "uid = ID2;",
+    "action": "PW1 := out;",
+    "output_event": ""
+  },
+  {
+    "trans_name": "t9",
+    "h_state": "id9",
+    "t_state": "id1",
+    "input_event": "",
+    "guard": "uid <> ID2;",
+    "action": "",
+    "output_event": ""
+  },
+  {
+    "trans_name": "t10",
+    "h_state": "id7",
+    "t_state": "id3",
+    "input_event": "",
+    "guard": "",
+    "action": "uid := 1; ID1 := 1; ID2 := 0; pwd := 1; PW1 := 1; out := 1;",
+    "output_event": ""
+  },
+  {
+    "trans_name": "t11",
+    "h_state": "id9",
+    "t_state": "id1",
+    "input_event": "?U.input(qos);",
+    "guard": "uid <> ID2;",
+    "action": "qos := qos - 1;",
+    "output_event": ""
+  },
+  {
+    "trans_name": "t12",
+    "h_state": "id1",
+    "t_state": "id9",
+    "input_event": "",
+    "guard": "",
+    "action": "",
+    "output_event": "!U.output(out);"
+  },
+  {
+    "trans_name": "t13",
+    "h_state": "id9",
+    "t_state": "id1",
+    "input_event": "",
+    "guard": "",
+    "action": "",
+    "output_event": "!U.output(PW1);"
+  },
+  {
+    "trans_name": "t14",
+    "h_state": "id9",
+    "t_state": "id1",
+    "input_event": "",
+    "guard": "uid <> ID1 || pwd <> PW1;",
+    "action": "",
+    "output_event": "!U.output(PW1);"
+  },
+  {
+    "trans_name": "t15",
+    "h_state": "id3",
+    "t_state": "id7",
+    "input_event": "?U.input(qos);",
+    "guard": "",
+    "action": "",
+    "output_event": "!U.output(PW1);"
+  },
+  {
+    "trans_name": "t16",
+    "h_state": "id7",
+    "t_state": "id3",
+    "input_event": "",
+    "guard": "uid <> ID1 && pwd <> PW1;",
+    "action": "",
+    "output_event": ""
+  },
+  {
+    "trans_name": "t17",
+    "h_state": "id7",
+    "t_state": "id3",
+    "input_event": "?U.input(qos);",
+    "guard": "uid <> ID1 && pwd <> ID2;",
+    "action": "",
+    "output_event": "!U.output(out);"
+  },
+  {
+    "trans_name": "t18",
+    "h_state": "id4",
+    "t_state": "id7",
+    "input_event": "",
+    "guard": "",
+    "action": "out := 0; PW1 := out;",
+    "output_event": "!U.output(PW1);"
+  },
+  {
+    "trans_name": "t19",
+    "h_state": "id7",
+    "t_state": "id4",
+    "input_event": "",
+    "guard": "uid <> ID2;",
+    "action": "uid := 1; ID1 := 1; ID2 := 0; pwd := 1; PW1 := 1; out := 1;",
+    "output_event": ""
+  },
+  {
+    "trans_name": "t20",
+    "h_state": "id5",
+    "t_state": "id7",
+    "input_event": "",
+    "guard": "",
+    "action": "out := 0; PW1 := out;",
+    "output_event": "!U.output(out);"
+  },
+  {
+    "trans_name": "t21",
+    "h_state": "id7",
+    "t_state": "id5",
+    "input_event": "",
+    "guard": "uid = ID1;",
+    "action": "PW1 := out;",
+    "output_event": ""
+  },
+  {
+    "trans_name": "t22",
+    "h_state": "id9",
+    "t_state": "id8",
+    "input_event": "?U.input(qos);",
+    "guard": "uid = ID2;",
+    "action": "",
+    "output_event": ""
+  },
+  {
+    "trans_name": "t23",
+    "h_state": "id7",
+    "t_state": "id2",
+    "input_event": "",
+    "guard": "uid = ID1;",
+    "action": "PW1 := 0;",
+    "output_event": ""
+  },
+  {
+    "trans_name": "t24",
+    "h_state": "id10",
+    "t_state": "id27",
+    "input_event": "",
+    "guard": "",
+    "action": "out := 0;",
+    "output_event": ""
+  },
+  {
+    "trans_name": "t25",
+    "h_state": "id7",
+    "t_state": "id10",
+    "input_event": "",
+    "guard": "uid = ID2;",
+    "action": "PW1 := qos; qos := qos + 1;",
+    "output_event": "!U.output(out);"
+  },
+  {
+    "trans_name": "t26",
+    "h_state": "id6",
+    "t_state": "id7",
+    "input_event": "?U.input(qos);",
+    "guard": "",
+    "action": "out := 1;",
+    "output_event": ""
+  },
+  {
+    "trans_name": "t27",
+    "h_state": "id9",
+    "t_state": "id6",
+    "input_event": "?U.input(qos);",
+    "guard": "uid = ID1 && pwd = PW1;",
+    "action": "PW1 := out;",
+    "output_event": "!U.output(PW1);"
+  },
+  {
+    "trans_name": "t28",
+    "h_state": "id27",
+    "t_state": "id6",
+    "input_event": "",
+    "guard": "uid = ID1 && pwd = PW1;",
+    "action": "PW1 := 0;",
+    "output_event": ""
+  },
+  {
+    "trans_name": "t29",
+    "h_state": "id11",
+    "t_state": "id9",
+    "input_event": "",
+    "guard": "",
+    "action": "out := 1;",
+    "output_event": "!U.output(out);"
+  },
+  {
+    "trans_name": "t30",
+    "h_state": "id29",
+    "t_state": "id11",
+    "input_event": "",
+    "guard": "uid = ID1 && pwd = PW1;",
+    "action": "PW1 := out;",
+    "output_event": ""
+  },
+  {
+    "trans_name": "t31",
+    "h_state": "id12",
+    "t_state": "id27",
+    "input_event": "",
+    "guard": "",
+    "action": "PW1 := qos; out := 0;",
+    "output_event": "!U.output(PW1);"
+  },
+  {
+    "trans_name": "t32",
+    "h_state": "id17",
+    "t_state": "id12",
+    "input_event": "",
+    "guard": "uid <> ID1;",
+    "action": "uid := ID2;",
+    "output_event": ""
+  },
+  {
+    "trans_name": "t33",
+    "h_state": "id20",
+    "t_state": "id30",
+    "input_event": "?U.input(qos);",
+    "guard": "uid <> ID1;",
+    "action": "uid <> ID1;",
+    "output_event": ""
+  },
+  {
+    "trans_name": "t34",
+    "h_state": "id13",
+    "t_state": "id17",
+    "input_event": "",
+    "guard": "",
+    "action": "out := 0; PW1 := out;",
+    "output_event": "!U.output(out);"
+  },
+  {
+    "trans_name": "t35",
+    "h_state": "id17",
+    "t_state": "id13",
+    "input_event": "",
+    "guard": "uid = ID1;",
+    "action": "qos := qos - 1;",
+    "output_event": ""
+  },
+  {
+    "trans_name": "t36",
+    "h_state": "id17",
+    "t_state": "id16",
+    "input_event": "",
+    "guard": "",
+    "action": "out := 1;",
+    "output_event": ""
+  },
+  {
+    "trans_name": "t37",
+    "h_state": "id17",
+    "t_state": "id16",
+    "input_event": "",
+    "guard": "uid = ID1;",
+    "action": "qos := qos - 1;",
+    "output_event": ""
+  },
+  {
+    "trans_name": "t38",
+    "h_state": "id20",
+    "t_state": "id14",
+    "input_event": "",
+    "guard": "uid <> ID1 && pwd <> PW1;",
+    "action": "PW1 := out;",
+    "output_event": ""
+  },
+  {
+    "trans_name": "t39",
+    "h_state": "id20",
+    "t_state": "id14",
+    "input_event": "",
+    "guard": "uid = ID1;",
+    "action": "out := 1;",
+    "output_event": "!U.output(out);"
+  },
+  {
+    "trans_name": "t40",
+    "h_state": "id14",
+    "t_state": "id20",
+    "input_event": "",
+    "guard": "",
+    "action": "",
+    "output_event": ""
+  },
+  {
+    "trans_name": "t41",
+    "h_state": "id20",
+    "t_state": "id14",
+    "input_event": "?U.input(qos);",
+    "guard": "",
+    "action": "PW1 := 0;",
+    "output_event": ""
+  },
+  {
+    "trans_name": "t42",
+    "h_state": "id22",
+    "t_state": "id19",
+    "input_event": "",
+    "guard": "",
+    "action": "out := 1;",
+    "output_event": "!U.output(out);"
+  },
+  {
+    "trans_name": "t43",
+    "h_state": "id22",
+    "t_state": "id19",
+    "input_event": "?U.input(qos);",
+    "guard": "",
+    "action": "",
+    "output_event": "!U.output(qos);"
+  },
+  {
+    "trans_name": "t44",
+    "h_state": "id15",
+    "t_state": "id20",
+    "input_event": "",
+    "guard": "",
+    "action": "out := 1;",
+    "output_event": "!U.output(out);"
+  },
+  {
+    "trans_name": "t45",
+    "h_state": "id17",
+    "t_state": "id15",
+    "input_event": "",
+    "guard": "uid = ID1;",
+    "action": "uid := 1; ID1 := 1; ID2 := 0; pwd := 1; PW1 := 1; out := 1;",
+    "output_event": ""
+  },
+  {
+    "trans_name": "t46",
+    "h_state": "id16",
+    "t_state": "id17",
+    "input_event": "",
+    "guard": "",
+    "action": "",
+    "output_event": "!U.output(PW1);"
+  },
+  {
+    "trans_name": "t47",
+    "h_state": "id18",
+    "t_state": "id17",
+    "input_event": "",
+    "guard": "",
+    "action": "out := 1;",
+    "output_event": ""
+  },
+  {
+    "trans_name": "t48",
+    "h_state": "id20",
+    "t_state": "id18",
+    "input_event": "?U.input(qos);",
+    "guard": "uid = ID1 && pwd = PW1;",
+    "action": "PW1 := qos;",
+    "output_event": ""
+  },
+  {
+    "trans_name": "t49",
+    "h_state": "id19",
+    "t_state": "id22",
+    "input_event": "",
+    "guard": "",
+    "action": "",
+    "output_event": "!U.output(out);"
+  },
+  {
+    "trans_name": "t50",
+    "h_state": "id22",
+    "t_state": "id19",
+    "input_event": "?U.input(qos);",
+    "guard": "uid = ID1;",
+    "action": "qos := qos - 1;",
+    "output_event": "!U.output(PW1);"
+  },
+  {
+    "trans_name": "t51",
+    "h_state": "id21",
+    "t_state": "id20",
+    "input_event": "",
+    "guard": "",
+    "action": "out := 1; PW1 := 0;",
+    "output_event": ""
+  },
+  {
+    "trans_name": "t52",
+    "h_state": "id22",
+    "t_state": "id21",
+    "input_event": "",
+    "guard": "",
+    "action": "qos := qos - 1; uid := ID1;",
+    "output_event": ""
+  },
+  {
+    "trans_name": "t53",
+    "h_state": "id23",
+    "t_state": "id27",
+    "input_event": "",
+    "guard": "",
+    "action": "out := 1; PW1 := out;",
+    "output_event": "!U.output(PW1);"
+  },
+  {
+    "trans_name": "t54",
+    "h_state": "id27",
+    "t_state": "id23",
+    "input_event": "",
+    "guard": "uid = ID1;",
+    "action": "",
+    "output_event": "!U.output(PW1);"
+  },
+  {
+    "trans_name": "t55",
+    "h_state": "id27",
+    "t_state": "id26",
+    "input_event": "",
+    "guard": "uid <> ID1 || pwd <> PW1;",
+    "action": "",
+    "output_event": "!U.output(PW1);"
+  },
+  {
+    "trans_name": "t56",
+    "h_state": "id27",
+    "t_state": "id26",
+    "input_event": "",
+    "guard": "",
+    "action": "uid := 1; ID1 := 1; ID2 := 0; pwd := 1; PW1 := 1; out := 1;",
+    "output_event": ""
+  },
+  {
+    "trans_name": "t57",
+    "h_state": "id29",
+    "t_state": "id24",
+    "input_event": "",
+    "guard": "",
+    "action": "PW1 := qos;",
+    "output_event": "!U.output(qos);"
+  },
+  {
+    "trans_name": "t58",
+    "h_state": "id29",
+    "t_state": "id24",
+    "input_event": "",
+    "guard": "uid <> ID2 || pwd <> PW2;",
+    "action": "PW1 := 0;",
+    "output_event": "!U.output(PW1);"
+  },
+  {
+    "trans_name": "t59",
+    "h_state": "id29",
+    "t_state": "id24",
+    "input_event": "",
+    "guard": "",
+    "action": "out := 1;",
+    "output_event": "!U.output(out);"
+  },
+  {
+    "trans_name": "t60",
+    "h_state": "id24",
+    "t_state": "id29",
+    "input_event": "",
+    "guard": "",
+    "action": "",
+    "output_event": ""
+  },
+  {
+    "trans_name": "t61",
+    "h_state": "id29",
+    "t_state": "id24",
+    "input_event": "?U.input(qos);",
+    "guard": "uid <> ID2 || pwd <> PW2;",
+    "action": "",
+    "output_event": ""
+  },
+  {
+    "trans_name": "t62",
+    "h_state": "id25",
+    "t_state": "id29",
+    "input_event": "",
+    "guard": "",
+    "action": "out := 1;",
+    "output_event": "!U.output(out);"
+  },
+  {
+    "trans_name": "t63",
+    "h_state": "id27",
+    "t_state": "id25",
+    "input_event": "",
+    "guard": "uid = ID1;",
+    "action": "PW1 := 0;",
+    "output_event": ""
+  },
+  {
+    "trans_name": "t64",
+    "h_state": "id26",
+    "t_state": "id27",
+    "input_event": "",
+    "guard": "",
+    "action": "",
+    "output_event": "!U.output(out);"
+  },
+  {
+    "trans_name": "t65",
+    "h_state": "id28",
+    "t_state": "id27",
+    "input_event": "",
+    "guard": "",
+    "action": "out := qos - 1;",
+    "output_event": "!U.output(out);"
+  },
+  {
+    "trans_name": "t66",
+    "h_state": "id29",
+    "t_state": "id28",
+    "input_event": "",
+    "guard": "uid = ID1 && pwd = PW1;",
+    "action": "qos := qos - 1;",
+    "output_event": "!U.output(PW1);"
+  },
+  {
+    "trans_name": "t67",
+    "h_state": "id30",
+    "t_state": "id29",
+    "input_event": "",
+    "guard": "",
+    "action": "out := 1;",
+    "output_event": "!U.output(qos);"
+  },
+  {
+    "trans_name": "t68",
+    "h_state": "id11",
+    "t_state": "id9",
+    "input_event": "?U.input(qos);",
+    "guard": "uid = ID2;",
+    "action": "",
+    "output_event": ""
+  },
+  {
+    "trans_name": "t69",
+    "h_state": "id5",
+    "t_state": "id22",
+    "input_event": "",
+    "guard": "uid <> ID2 || pwd <> PW2;",
+    "action": "",
+    "output_event": "!U.output(out);"
+  },
+  {
+    "trans_name": "t70",
+    "h_state": "id24",
+    "t_state": "id20",
+    "input_event": "",
+    "guard": "uid = ID1;",
+    "action": "PW1 := out;",
+    "output_event": ""
+  },
+  {
+    "trans_name": "t71",
+    "h_state": "id26",
+    "t_state": "id2",
+    "input_event": "?U.input(qos);",
+    "guard": "",
+    "action": "",
+    "output_event": ""
+  },
+  {
+    "trans_name": "t72",
+    "h_state": "id27",
+    "t_state": "id3",
+    "input_event": "",
+    "guard": "uid <> ID2 || pwd <> PW2;",
+    "action": "",
+    "output_event": ""
+  },
+  {
+    "trans_name": "t73",
+    "h_state": "id15",
+    "t_state": "id16",
+    "input_event": "?U.input(qos);",
+    "guard": "",
+    "action": "",
+    "output_event": ""
+  },
+  {
+    "trans_name": "t74",
+    "h_state": "id28",
+    "t_state": "id23",
+    "input_event": "",
+    "guard": "uid = ID2;",
+    "action": "",
+    "output_event": "!U.output(qos);"
+  },
+  {
+    "trans_name": "t75",
+    "h_state": "id24",
+    "t_state": "id26",
+    "input_event": "?U.input(qos);",
+    "guard": "uid <> ID2;",
+    "action": "",
+    "output_event": "!U.output(PW1);"
+  },
+  {
+    "trans_name": "t76",
+    "h_state": "id4",
+    "t_state": "id26",
+    "input_event": "",
+    "guard": "uid = ID2 ;",
+    "action": "",
+    "output_event": "!U.output(PW1);"
+  },
+  {
+    "trans_name": "t77",
+    "h_state": "id7",
+    "t_state": "id8",
+    "input_event": "",
+    "guard": "uid = ID2;",
+    "action": "PW1 := 0;",
+    "output_event": "!U.output(PW1);"
+  },
+  {
+    "trans_name": "t78",
+    "h_state": "id22",
+    "t_state": "id23",
+    "input_event": "",
+    "guard": "uid = ID2;",
+    "action": "PW1 := out;",
+    "output_event": ""
+  },
+  {
+    "trans_name": "t79",
+    "h_state": "id28",
+    "t_state": "id22",
+    "input_event": "",
+    "guard": "uid = ID2;",
+    "action": "",
+    "output_event": "!U.output(qos);"
+  },
+  {
+    "trans_name": "t80",
+    "h_state": "id30",
+    "t_state": "id30",
+    "input_event": "",
+    "guard": "uid <> ID1;",
+    "action": "out := 1;",
+    "output_event": ""
+  },
+  {
+    "trans_name": "t81",
+    "h_state": "id11",
+    "t_state": "id24",
+    "input_event": "?U.input(qos);",
+    "guard": "uid = ID1 && pwd = PW1;",
+    "action": "",
+    "output_event": "!U.output(out);"
+  }
+]
