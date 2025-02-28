@@ -5,11 +5,10 @@ from matplotlib import pyplot as plt
 import random
 import math
 import copy
-
 import Kmeans
 
 
-# fitness-diverHussain
+# diverHussain
 def fun(X, lb, ub):
 
     dim = X.shape[1]
@@ -61,6 +60,7 @@ def CalculateFitness_Susp(X, dim, fun, dataset):
             lb = np.amin(selected_matrix)
             fitness[i] = fun(selected_matrix, lb, ub)
         else:
+
             fitness[i] = 0
 
     return fitness
@@ -99,6 +99,7 @@ def SortPosition(X, index):
 
     return Xnew
 
+
 def WOA(pop, dim, MaxIter, fun, dataset, cluster_result):
 
     X = initialization(pop, dim, cluster_result)
@@ -107,13 +108,11 @@ def WOA(pop, dim, MaxIter, fun, dataset, cluster_result):
     fitness = CalculateFitness_Susp(X, dim, fun, dataset)
 
     fitness, sortIndex = SortFitnessDec(fitness)
-    # fitness, sortIndex = SortFitnessInc(fitness)
     X = SortPosition(X, sortIndex)
 
     GbestScore = copy.copy(fitness[0])
     GbestPosition = np.zeros([1, dim])
     GbestPosition[0, :] = copy.copy(X[0, :])
-    print(GbestScore)
 
     for t in range(MaxIter):
 
@@ -147,27 +146,27 @@ def WOA(pop, dim, MaxIter, fun, dataset, cluster_result):
         X = updateCheck(X, pop, dim, cluster_result)
         fitness = CalculateFitness_Susp(X, dim, fun, dataset)
         fitness, sortIndex = SortFitnessDec(fitness)
-        # fitness, sortIndex = SortFitnessInc(fitness)
+
         X = SortPosition(X, sortIndex)
 
         if fitness[0] >= GbestScore:
             GbestScore = copy.copy(fitness[0])
             GbestPosition[0, :] = copy.copy(X[0, :])
         Curve[t] = GbestScore
-        print(GbestScore)
 
     return GbestScore, GbestPosition, Curve
 
 
 if __name__ == "__main__":
 
-    df_normalized_data = pd.read_csv('df_normalized_data_MLS.csv', index_col=0)
+    df_normalized_data = pd.read_csv('df_normalized_data_RM2.csv', index_col=0)      # ！！！！
     n_clusters, cluster_result = Kmeans.Kmeans(df_normalized_data)
 
     dataset = df_normalized_data.T
 
     for i in range(30):
 
+        # 设置参数
         pop = 30
         MaxIter = 100
         dim = n_clusters
@@ -175,9 +174,7 @@ if __name__ == "__main__":
         fobj = fun
         GbestScore, GbestPosition, Curve = WOA(pop, dim, MaxIter, fobj, dataset, cluster_result)
 
-        print(GbestScore)
         integer_formula = [int(value) for value in GbestPosition[0]]
-        print(integer_formula)
 
         plt.clf()
 
@@ -189,16 +186,15 @@ if __name__ == "__main__":
         plt.rcParams['axes.unicode_minus'] = False
         plt.grid()
         plt.title('KWOA', fontsize='large')
-        figName = 'KWOA_MLS_{0}.png'.format(str(i+1))
+        figName = 'KWOA_RM2_{0}.png'.format(str(i+1))     # !!!!
         plt.savefig(figName, transparent=True)
         # plt.show()
 
-        resultWOA = r'D:\pythonProject\WOA_modelSpectrum\MLS(250)\KWOA\resultWOA.txt'
-        with open(resultWOA, 'a', encoding='utf-8') as file:
+        resultKWOA = r'D:\pythonProject\WOA_modelSpectrum\RM2(250)\KWOA\resultKWOA.txt'    # !!!!!
+        with open(resultKWOA, 'a', encoding='utf-8') as file:
             file.write(str(i+1) + '\n')
-            file.write(str(GbestScore) + '\n')
-            file.write(str(integer_formula) + '\n')
+            file.write('best fitness：'+str(GbestScore) + '\n')
+            file.write('best solution：' + str(integer_formula) + '\n')
             file.write('\n')
 
-    print(resultWOA)
 

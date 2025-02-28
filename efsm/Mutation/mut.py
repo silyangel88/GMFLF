@@ -55,7 +55,6 @@ def load_efsm_mutation(iteration, specification_name, efsm_obj=None, mutation_ty
     mut_name = 'Mutation/try/{0}Mut{1}_T{2}.json'.format(specification_name, iteration, faultTransition)
 
     file_name = os.path.join(dir_name, mut_name)
-    print("写入file_name:" + file_name)
     write_json_file(file_name, t_list)
 
 

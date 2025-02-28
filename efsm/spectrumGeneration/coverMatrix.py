@@ -20,7 +20,7 @@ def get_info(moedel_name, i):
 def all_path(dirname):
     root_path = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     file_path = root_path + dirname
-    result = []  # 所有的文件
+    result = []
 
     for maindir, subdir, file_name_list in os.walk(file_path):
         for filename in file_name_list:
@@ -47,15 +47,16 @@ def read_trace(root_path, file_path):
 
 
 if __name__ == '__main__':
-    traceInfo_files = all_path(r'/spectrumGeneration/MLS(250)/Trace')
-    root_path = r'D:\pythonProject\efsm\spectrumGeneration\MLS(250)\Trace'
+    traceInfo_files = all_path(r'/spectrumGeneration/RM2(250)/Trace')                   # !!!!!
+    root_path = r'D:\pythonProject\efsm\spectrumGeneration\RM2(250)\Trace'    # !!!!!
     print(traceInfo_files)
 
     '''transitionNum: 
      SCP_mut-8; ATM_mut-30; Network_mut-17; INRES_mut-18; OLSR_mut -23 InFlight_mut -32 SIP_mut -57 MLS_mut -81
+     RM1_mut-114;
      '''
-    moedel_name = 'MLS_mut'
-    transitionNum = 81                  # !!!
+    moedel_name = 'RM2_mut'          # !!!!
+    transitionNum = 224                  # !!!
     index_trace, index_transition = get_info(moedel_name, transitionNum)
 
     for filename in traceInfo_files:
@@ -94,6 +95,7 @@ if __name__ == '__main__':
         Failed_matrix = df_Failed.values
         Passed_matrix = df_Passed.values
 
+        '''EP,EF,NP,NF'''
         temp = np.ones(len(index_transition))
         EP = np.sum(Passed_matrix, axis=1)
         df_spectrum['EP'] = EP

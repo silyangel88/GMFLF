@@ -13,7 +13,7 @@ warnings.filterwarnings('ignore')
 
 def gp_add(a, b): return a + b
 def gp_sub(a, b): return a - b
-def gp_div(a, b): return np.where(b == 0, 1, a.astype(float)/b) # prevent "divided by 0
+def gp_div(a, b): return np.where(b == 0, 1, a.astype(float)/b)  # prevent "divided by 0
 def gp_mul(a, b): return a * b
 def gp_sqrt(a): return np.sqrt(abs(a))
 
@@ -150,12 +150,11 @@ def testExpression():
 
 if __name__ == "__main__":
 
-    # 载入频谱信息
     dataFiles = all_path("C:\Users\lenovo\Desktop\spectrum\MLS(250)")
     vFaultLocation, vTransitionCount, FaultVersionsDict = readCSV(dataFiles)
 
     '''GP'''
-    global numberOfversion                       # the global variable storing the selected 20 samples,the remaining 72 versions is for subsequent evaluation
+    global numberOfversion
     main_run("C:\Users\lenovo\Desktop\GP_model\ev_results_MLS")              # outputFolder
 
 

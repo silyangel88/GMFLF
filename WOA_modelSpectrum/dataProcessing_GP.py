@@ -9,7 +9,8 @@ import re
 def gp_add(a, b): return a + b
 def gp_sub(a, b): return a - b
 def gp_div(a, b):
-    c = np.divide(a, b, out=np.ones_like(a), where=b != 0)     # prevent "divided by 0"
+    eps = 1e-6
+    c = np.divide(a, np.where(b != 0, b, eps))
     return c
 def gp_mul(a, b): return a * b
 def gp_sqrt(a): return np.sqrt(abs(a))
@@ -55,13 +56,12 @@ def all_path(file_path):
 
 if __name__ == "__main__":
 
-    gpFormulaDict = readGPFormulas(r"D:\pythonProject\WOA_modelSpectrum\MLS(250)\formula(3000)_MLS.csv")
+    gpFormulaDict = readGPFormulas(r"D:\pythonProject\WOA_modelSpectrum\RM2(250)\formula(3000)_RM2.csv")     # !!!
     formulas_list = list(gpFormulaDict.values())
     # print(formulas_list)
 
-    '''spectrum'''
-    file_paths = all_path(r'D:\pythonProject\efsm\spectrumGeneration\MLS(250)\Spectrum')
-    root_path = r'D:\pythonProject\efsm\spectrumGeneration\MLS(250)\Spectrum'
+    file_paths = all_path(r'D:\pythonProject\efsm\spectrumGeneration\RM2(250)\Spectrum')     # !!!!!
+    root_path = r'D:\pythonProject\efsm\spectrumGeneration\RM2(250)\Spectrum'            # !!!!!
 
     for file in file_paths:
         print(file, "-----------------------------------------")
@@ -71,12 +71,12 @@ if __name__ == "__main__":
         GPsus_table_Raw = pd.DataFrame(np.zeros([total_transitions, 1]))
         GPsus_table_Raw.columns = ['transition']
         GPsus_table_Raw['transition'] = pd.DataFrame(np.arange(1, total_transitions + 1))
-        # GPsus_table_Raw['transition'] = pd.DataFrame(np.arange(0, total_transitions))
+        # GPsus_table_Raw['transition'] = pd.DataFrame(np.arange(0, total_transitions))             # class2-t0
 
         rank_table_Raw = pd.DataFrame(np.zeros([total_transitions, 1]))
         rank_table_Raw.columns = ['transition']
         rank_table_Raw['transition'] = pd.DataFrame(np.arange(1, total_transitions + 1))
-        # rank_table_Raw['transition'] = pd.DataFrame(np.arange(0, total_transitions))
+        # rank_table_Raw['transition'] = pd.DataFrame(np.arange(0, total_transitions))             # class2-t0
 
         spectrum = spectrum.values
         EP = spectrum[:, 0]
@@ -102,9 +102,9 @@ if __name__ == "__main__":
         match = re.search(r'_(.*?)\.', file)
         result_name = match.group(1)
 
-        file_name1 = r'D:\WOA_modelSpectrum\MLS(250)\TrainSusp\GPsusp(3000)_{0}.csv'.format(result_name)
+        file_name1 = r'D:\pythonProject\WOA_modelSpectrum\RM2(250)\TrainSusp\GPsusp(3000)_{0}.csv'.format(result_name)  # !!!
         GPsus_table_Raw.to_csv(file_name1, mode='w', header=True, index=False, sep=',')
 
-        rankfile_name1 = r'D:\pythonProject\WOA_modelSpectrum\MLS(250)\rankTable\GPrank(3000)_{0}.csv'.format(result_name)
+        rankfile_name1 = r'D:\pythonProject\WOA_modelSpectrum\RM2(250)\rankTable\GPrank(3000)_{0}.csv'.format(result_name)  # !!!
         rank_table_Raw.to_csv(rankfile_name1, mode='w', header=True, index=False, sep=',')
 

@@ -42,16 +42,16 @@ class Operator(object):
                 else:
                     selected = random.choice(operator)
                     self.mutation_points(elements=element, item=selected[0], index=selected[1])
-            # 仅有数字
+
             elif len(number) != 0:
                 selected = random.choice(number)
                 selected_index = selected[1]
                 element[selected_index] = random.randint(0, 3)
-            # 仅有操作符
+
             elif len(operator) != 0:
                 selected = random.choice(operator)
                 self.mutation_points(elements=element, item=selected[0], index=selected[1])
-            # 都为空
+
             else:
                 flag = False
 

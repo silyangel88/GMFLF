@@ -17,7 +17,7 @@ class EFSMParser(object):
         d = {'true': True, '1': True, 'false': False, '0': False}
         return d[str]
 
-    # 解析文本结点，得到初步的context_vars input_params
+    # get context_vars input_params
     def analysis(self, node, context_var, input_param):
         h = {
             # input function

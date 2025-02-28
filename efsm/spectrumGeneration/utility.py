@@ -11,8 +11,7 @@ def read_csv_all_test_suite(file_path):
     import ast
     with open(file_path, 'r') as file:
         reader = csv.DictReader(file)
-        #fieldnames = reader.fieldnames
-        #print(fieldnames)
+
         test_suite = []
         test_case = []
         tc_visited = set()
@@ -52,17 +51,12 @@ def all_path(dirname):
             last_dot_index = filename.rfind('.')
             result_name = filename[:last_dot_index]
             result.append(result_name)
-    # print(result)
+
     return result
 
 
 def blank_line(f_name):
     dict1 = {'score_list': [''], 'test_suite': [''], 'sd': ['']}
     df = pd.DataFrame(dict1)
-    # 保存 dataframe
     df.to_csv(f_name, mode='a', header=False, index=False)
 
-
-if __name__ == '__main__':
-    data = read_csv_all_test_suite('/PathGeneration/modelTrace_class2_random.csv')
-    # print(data)

@@ -31,8 +31,8 @@ class LoadEFSM(object):
             self.efsm.add_transition(t)
 
     def load_efsm(self, specification_name):
-        # json_name = 'Specification/{0}.json'.format(specification_name)           # 1、读取标准模型文件   *要改
-        json_name = 'Mutation/try/{0}.json'.format(specification_name)      # 2、读取变异体文件 model根据传进的参数 load模型  *要改
+        # json_name = 'Specification/{0}.json'.format(specification_name)           #
+        json_name = 'Mutation/try/{0}.json'.format(specification_name)      #
         file_name = os.path.join(root_path, json_name)
         t_list = read_json_file(file_name)
         input_params = {}
