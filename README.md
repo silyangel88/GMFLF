@@ -1,6 +1,10 @@
 # GMFLF——General Model Fault Localization Framework
 
-A general framework for applying SBFL techniques to fault localization of models is presented, including five modules: Generation of Model Spectrum, Construction of Candidate Formula Pools, Construction of an Optimal Subset of Formulas, Training of the Fault Localization Model, Production of Final Ranking Results. This repository is associated with the paper: **Automated Spectrum-based Model Fault Localization Within a General Search Framework**, to be published in *The Journal of Systems & Software*.
+A general framework for applying SBFL techniques to fault localization of models is presented, including five modules: Generation of Model Spectrum, Construction of Candidate Formula Pools, Construction of an Optimal Subset of Formulas, Training of the Fault Localization Model, Production of Final Ranking Results. This repository is associated with the paper: 
+
+Shu, T.; Xue, X.; Yin, X.; Xia, J. Automated Spectrum-Based Model Fault Localization within a Search Framework. Journal of Systems and Software 2025, 230, 112576. https://doi.org/10.1016/j.jss.2025.112576.
+
+https://authors.elsevier.com/a/1lWZqbKHpKFtO
 
 The following is the experimental code that implements this framework on Python 3.6 and Python 2, and version 2.1 of the RankLib toolkit (https://github.com/jattenberg/RankLib).
 
@@ -52,3 +56,5 @@ The following is the experimental code that implements this framework on Python 
         - `gp_exam_statistics.py`
         - `result`   evaluation Results (including EXAM score, Accuracy, wrong ranking, etc.)
         - The remaining files are faulty versions' ranking results after learning-to-rank training
+## Contributor Statement
+The experimental code and data analysis presented in this repository were entirely and independently completed by **Xue Xinru**. I gratefully acknowledge her contribution to this research project.
